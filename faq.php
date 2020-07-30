@@ -97,7 +97,7 @@
           <div class="col-md-7">
             <h1 class="text-white font-weight-bold">Frequently Ask Questions</h1>
             <div class="custom-breadcrumbs">
-              <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
+            <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
               <span class="text-white"><strong>FAQ</strong></span>
             </div>
           </div>

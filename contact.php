@@ -97,7 +97,7 @@
           <div class="col-md-7">
             <h1 class="text-white font-weight-bold">Contact Us</h1>
             <div class="custom-breadcrumbs">
-              <a href="#">Home</a> <span class="mx-2 slash">/</span>
+            <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
               <span class="text-white"><strong>Contact Us</strong></span>
             </div>
           </div>
@@ -155,15 +155,25 @@
             </form>
           </div>
           <div class="col-lg-5 ml-auto">
+          
             <div class="p-4 mb-3 bg-white">
+            <div id="map">
+                <!-- How to change your own map point
+                        1. Go to Google Maps
+                        2. Click on your location point
+                        3. Click "Share" and choose "Embed map" tab
+                        4. Copy only URL and paste it within the src="" field below
+                -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3215.6748988530226!2d85.74187112409825!3d20.293606348878882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1907438b22a2ff%3A0x640ca4bd8a3cef43!2sIIIT%2C%20P-Block!5e0!3m2!1sen!2sin!4v1593927151786!5m2!1sen!2sin" style="border:0;DISPLAY:none" allowfullscreen></iframe>
+                                    </div>
               <p class="mb-0 font-weight-bold">Address</p>
               <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
 
               <p class="mb-0 font-weight-bold">Phone</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+              <p class="mb-4"><a href="#">+1 9487980784</a></p>
 
               <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+              <p class="mb-0"><a href="#">info@wirmon.in</a></p>
 
             </div>
           </div>
