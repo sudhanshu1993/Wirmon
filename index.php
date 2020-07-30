@@ -141,7 +141,7 @@
 			              				<div class="form-group">
 				              				<div class="form-field">
 				              					<div class="icon"><span class="icon-briefcase"></span></div>
-								                <input type="text" class="form-control" placeholder="eg. Garphic. Web Developer">
+								                <input type="text" class="form-control" placeholder="Garphic. Web Developer">
 								              </div>
 							              </div>
 			              			</div>
@@ -149,7 +149,7 @@
 			              				<div class="form-group">
 			              					<div class="form-field">
 				              					<div class="select-wrap">
-						                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+						                      <div class="icon"><span class="icon-arrow-down"></span></div>
 						                      <select name="" id="" class="form-control">
 						                      	<option value="">Category</option>
 						                      	<option value="">Full Time</option>

@@ -1,7 +1,8 @@
+
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Wirmon &mdash; FAQ</title>
+    <title>Wirmon &mdash; Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -45,43 +46,43 @@
     <header class="site-navbar mt-3">
       <div class="container-fluid">
         <div class="row align-items-center">
-          <div class="site-logo col-6"><a href="index.html">Wirmon</a></div>
+          <div class="site-logo col-6"><a href="index.php">Wirmon</a></div>
 
           <nav class="mx-auto site-navigation">
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="index.html" class="nav-link">Home</a></li>
-              <li><a href="about.html">About</a></li>
+              <li><a href="index.php" class="nav-link">Home</a></li>
+              <li><a href="about.php">About</a></li>
               <li class="has-children">
-                <a href="job-listings.html">Job Listings</a>
+                <a href="job-listings.php">Job Listings</a>
                 <ul class="dropdown">
-                  <li><a href="job-single.html">Job Single</a></li>
-                  <li><a href="post-job.html">Post a Job</a></li>
+                  <li><a href="job-single.php">Job Single</a></li>
+                  <li><a href="post-job.php">Post a Job</a></li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href="services.html">Pages</a>
+                <a href="services.php"  class="active">Pages</a>
                 <ul class="dropdown">
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="service-single.html">Service Single</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="faq.html" class="active">Frequently Ask Questions</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
+                  <li><a href="services.php">Services</a></li>
+                  <li><a href="service-single.php">Service Single</a></li>
+                  <li><a href="blog-single.php">Blog Single</a></li>
+                  <li><a href="portfolio.php">Portfolio</a></li>
+                  <li><a href="portfolio-single.php"  class="active">Portfolio Single</a></li>
+                  <li><a href="testimonials.php">Testimonials</a></li>
+                  <li><a href="faq.php">Frequently Ask Questions</a></li>
+                  <li><a href="gallery.php">Gallery</a></li>
                 </ul>
               </li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Post a Job</a></li>
-              <li class="d-lg-none"><a href="login.html">Log In</a></li>
+              <li><a href="blog.php">Blog</a></li>
+              <li><a href="contact.php">Contact</a></li>
+              <li class="d-lg-none"><a href="post-job.php"><span class="mr-2">+</span> Post a Job</a></li>
+              <li class="d-lg-none"><a href="login.php">Log In</a></li>
             </ul>
           </nav>
 
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
-              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Post a Job</a>
-              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              <a href="post-job.php" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Post a Job</a>
+              <a href="login.php" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
@@ -95,74 +96,105 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <h1 class="text-white font-weight-bold">Frequently Ask Questions</h1>
+            <h1 class="text-white font-weight-bold">Portfolio Single (Extra Pages)</h1>
             <div class="custom-breadcrumbs">
-              <a href="index.html">Home</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>FAQ</strong></span>
+              <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
+              <a href="portfolio.php">Portfolio</a> <span class="mx-2 slash">/</span>
+              <span class="text-white"><strong>Portfolio Single</strong></span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="site-section" id="accordion">
+    <section class="site-section pb-0 portfolio-single" id="next-section">
+
       <div class="container">
 
-        <div class="row accordion justify-content-center block__76208">
-          <div class="col-lg-6">
-            <img src="images/sq_img_8.jpg" alt="Image" class="img-fluid rounded">
-          </div>
-          <div class="col-lg-5 ml-auto">
-            <div class="accordion-item">
-              <h3 class="mb-0 heading">
-                <a class="btn-block h4" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="true" aria-controls="collapseFive">What is the name of your company<span class="icon"></span></a>
-              </h3>
-              <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="body-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quae cumque perspiciatis aperiam accusantium facilis provident aspernatur nisi optio debitis dolorum, est eum eligendi vero aut ad necessitatibus nulla sit labore doloremque magnam! Ex molestiae, dolor tempora, ad fuga minima enim mollitia consequuntur, necessitatibus praesentium eligendi officia recusandae culpa tempore eaque quasi ullam magnam modi quidem in amet. Quod debitis error placeat, tempore quasi aliquid eaque vel facilis culpa voluptate.</p>
-                </div>
-              </div>
-            </div> <!-- .accordion-item -->
+        <div class="row mb-5 mt-5">
 
-            <div class="accordion-item">
-              <h3 class="mb-0 heading">
-                <a class="btn-block h4" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseSix">How much pay for 3  months?<span class="icon"></span></a>
-              </h3>
-              <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="body-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
-                </div>
-              </div>
-            </div> <!-- .accordion-item -->
-
-            <div class="accordion-item">
-              <h3 class="mb-0 heading">
-                <a class="btn-block h4" data-toggle="collapse" href="#collapseSeven" role="button" aria-expanded="false" aria-controls="collapseSeven">Do I need to register?  <span class="icon"></span></a>
-              </h3>
-              <div id="collapseSeven" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="body-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
-                </div>
-              </div>
-            </div> <!-- .accordion-item -->
-
-            <div class="accordion-item">
-              <h3 class="mb-0 heading">
-                <a class="btn-block h4" data-toggle="collapse" href="#collapseEight" role="button" aria-expanded="false" aria-controls="collapseEight">Who should I contact in case of support.<span class="icon"></span></a>
-              </h3>
-              <div id="collapseEight" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="body-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ad laborum expedita. Nostrum iure atque enim quisquam minima distinctio omnis, consequatur aliquam suscipit, quidem, esse aspernatur! Libero, excepturi animi repellendus porro impedit nihil in doloremque a quaerat enim voluptatum, perspiciatis, quas dignissimos maxime ut cum reiciendis eius dolorum voluptatem aliquam!</p>
-                </div>
-              </div>
-            </div> <!-- .accordion-item -->
-
+          <div class="col-lg-8">
+            <figure>
+              <a href="images/sq_img_6.jpg" data-fancybox="gallery"><img src="images/sq_img_6.jpg" alt="Image" class="img-fluid"></a>
+            </figure>
+            <figure>
+              <a href="images/sq_img_2.jpg" data-fancybox="gallery"><img src="images/sq_img_2.jpg" alt="Image" class="img-fluid"></a>
+            </figure>
+            <figure>
+              <a href="images/sq_img_7.jpg" data-fancybox="gallery"><img src="images/sq_img_7.jpg" alt="Image" class="img-fluid"></a>
+            </figure>
+            <figure class="mb-0">
+              <a href="images/sq_img_8.jpg" data-fancybox="gallery"><img src="images/sq_img_8.jpg" alt="Image" class="img-fluid"></a>
+            </figure>
           </div>
 
+          <div class="col-lg-4 ml-auto h-100 jm-sticky-top">
 
+
+            <div class="mb-4">
+              <h3 class="mb-4 h4 border-bottom">Project Description</h3>
+
+              <p class="mb-0">Nostrum iure atque enim quisquam minima distinctio omnis consequatur aliquam suscipit quidem esse aspernatur Libero excepturi animi repellendus porro impedit</p>
+            </div>
+
+            <div class="row mb-4">
+
+              <div class="col-sm-12 col-md-12 mb-4 col-lg-12">
+                <strong class="d-block text-black">Client</strong>
+                Google, Inc.
+              </div>
+              <div class="col-sm-12 col-md-12 mb-4 col-lg-12">
+                <strong class="d-block text-black">Role</strong>
+                Design, Front-End and Back-End (WordPress)
+              </div>
+              <div class="col-sm-12 col-md-12 mb-4 col-lg-12">
+                <strong class="d-block text-black">Year Started</strong>
+                2019
+              </div>
+              <div class="col-sm-12 col-md-12 mb-4 col-lg-12">
+                <strong class="d-block text-black mb-3">Website URL</strong>
+                <a href="#" class="btn btn-outline-primary border-width-2">Visit Website</a>
+              </div>
+            </div>
+
+            <div class="block__87154 mb-0">
+
+                <blockquote>
+                  <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit</p>
+                </blockquote>
+                <div class="block__91147 d-flex align-items-center">
+                  <figure class="mr-4"><img src="images/person_2.jpg" alt="Image" class="img-fluid"></figure>
+                  <div>
+                    <h3>Chris Peter</h3>
+                    <span class="position">Web Designer</span>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </section>
+    <section class=" py-3 site-section mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <a href="#" class="btn btn-md btn-outline-primary border-width-2 d-block">Previous Project</a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#" class="btn btn-md btn-primary border-width-2 d-block">All Projects</a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="#" class="btn btn-md btn-outline-primary border-width-2 d-block">Next Project</a>
+          </div>
         </div>
       </div>
     </section>
+
 
     <section class="site-section bg-light">
       <div class="container">
@@ -175,7 +207,7 @@
           <div class="col-lg-6">
             <div class="block__87154 bg-white rounded">
               <blockquote>
-                <p>&ldquo;Ipsum harum assumenda in eum vel eveniet numquam cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit&rdquo;</p>
+                <p>Ipsum harum assumenda in eum vel eveniet numquam cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit</p>
               </blockquote>
               <div class="block__91147 d-flex align-items-center">
                 <figure class="mr-4"><img src="images/person_1.jpg" alt="Image" class="img-fluid"></figure>
@@ -190,7 +222,7 @@
           <div class="col-lg-6">
             <div class="block__87154 bg-white rounded">
               <blockquote>
-                <p>&ldquo;Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit&rdquo;</p>
+                <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit</p>
               </blockquote>
               <div class="block__91147 d-flex align-items-center">
                 <figure class="mr-4"><img src="images/person_2.jpg" alt="Image" class="img-fluid"></figure>
@@ -258,7 +290,7 @@
           <div class="col-12">
             <p class="copyright"><small>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="index.html" target="_blank" >Wirmon</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="index.php" target="_blank" >Wirmon Pvt Ltd</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
           </div>
         </div>
