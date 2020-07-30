@@ -10392,3 +10392,8 @@ h1, h2, h3, h4 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+  #navicon{
+    background-image: url("../images/ic.png");
+		background-size: 100px 100px;
+  }
