@@ -17,11 +17,27 @@
     <link rel="stylesheet" href="fonts/line-icons/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-
+<style>
+.pb-3{animation-name: fadeInUp;animation-duration: 2s;}
+</style>
     <!-- MAIN CSS -->
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/wow.js"></script>
+      <script>
+    var wow = new WOW(
+                          {
+                          boxClass:     'wow',      // default
+                          animateClass: 'animated', // default
+                          offset:       0,          // default
+                          mobile:       true,       // default
+                          live:         true        // default
+                        }
+                        )
+                        wow.init();
+                  </script>
   </head>
-  <body id="top">
+  <body id="top" data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
 
   <div id="overlayer"></div>
   <div class="loader">
@@ -31,73 +47,54 @@
   </div>
 
 
-<div class="site-wrap">
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div> <!-- .site-mobile-menu -->
+
 
 
     <!-- NAVBAR -->
-    <header class="site-navbar mt-3">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="site-logo col-6"><a href="index.html">Wirmon</a></div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Wirmon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-          <nav class="mx-auto site-navigation">
-            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="index.html" class="nav-link active">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li class="has-children">
-                <a href="job-listings.html">Job Listings</a>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item has-children"><a class="nav-link">Jobs</a>
+              <ul class="dropdown">
+                <li class="nav-item"><a href="job-single.html" class="nav-link">Job Single</a></li>
+                <li class="nav-item"><a href="post-job.html" class="nav-link">Post a Job</a></li>
+              </ul></li>
+              <li class="nav-item has-children"><a class="nav-link">Services</a>
                 <ul class="dropdown">
-                  <li><a href="job-single.html">Job Single</a></li>
-                  <li><a href="post-job.html">Post a Job</a></li>
-                </ul>
-              </li>
-              <li class="has-children">
-                <a href="services.html">Pages</a>
-                <ul class="dropdown">
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="service-single.html">Service Single</a></li>
-                  <li><a href="blog-single.html">Blog Single</a></li>
-                  <li><a href="portfolio.html">Portfolio</a></li>
-                  <li><a href="portfolio-single.html">Portfolio Single</a></li>
-                  <li><a href="testimonials.html">Testimonials</a></li>
-                  <li><a href="faq.html">Frequently Ask Questions</a></li>
-                  <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-              </li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li class="d-lg-none"><a href="post-job.html"><span class="mr-2">+</span> Post a Job</a></li>
-              <li class="d-lg-none"><a href="login.html">Log In</a></li>
-            </ul>
-          </nav>
+                  <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                  <li class="nav-item"><a href="service-single.html" class="nav-link">Service Single</a></li>
+                  <li class="nav-item"><a href="blog-single.html" class="nav-link">Blog Single</a></li>
+                  <li class="nav-item"><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                  <li class="nav-item"><a href="portfolio-single.html" class="nav-link">Portfolio Single</a></li>
+                  <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                  <li class="nav-item"><a href="faq.html" class="nav-link">Frequently Ask Questions</a></li>
+                  <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                </ul></li>
+                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item cta mr-md-2"><a href="post-job.html" class="nav-link"><span class="mr-2">+</span>Post a Job</a></li>
+            <li class="nav-item cta cta-colored"><a href="login.html" class="nav-link">Login</a></li>
 
-          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
-            <div class="ml-auto">
-              <a href="post-job.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Post a Job</a>
-              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
-            </div>
-            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
-          </div>
-
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
 
     <!-- HOME -->
     <section class="home-section section-hero overlay bg-image" style="background-image: url('images/hero_11.jpg');" id="home-section">
 
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-          <div class="col-xl-10 ftco-animate mb-5 pb-5" data-scrollax=" properties: { translateY: '70%' }" style="margin-top:-10%;">
+          <div class="col-xl-10 ftco-animate wow fadeInUp mb-5 pb-5" data-scrollax=" properties: { translateY: '70%' }" style="animation-duration: 1.5s;margin-top:-10%;">
           	<p class="mb-4 mt-5 pt-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have <span class="number" data-number="850000">0</span> great job offers you deserve!</p>
             <h1 class="mb-5" style="opacity: 0.827778;font-weight: 800;transform: translateZ(0px) translateY(-3.22917%);">Your Dream <br><span>Job is Waiting</span></h1>
 
@@ -223,11 +220,11 @@
     </section>
 
     <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('images/hero_11.jpg');">
-      <div class="container">
+      <div class="container wow">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2 text-white">JobBoard Site Stats</h2>
-            <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde officiis recusandae sequi excepturi corrupti.</p>
+            <h2 class="section-title mb-2 text-white fadeInUp wow" style="animation-duration:1.5s;">JobBoard Site Stats</h2>
+            <p class="lead text-white fadeInUp wow" style="animation-duration:2s;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde officiis recusandae sequi excepturi corrupti.</p>
           </div>
         </div>
         <div class="row pb-0 block__19738 section-counter">
@@ -272,12 +269,12 @@
 
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2">43,167 Job Listed</h2>
+            <h2 class="section-title mb-2 fadeInUp wow" style="animation-duration:1.5s;">43,167 Job Listed</h2>
           </div>
         </div>
 
         <ul class="job-listings mb-5">
-          <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+          <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center wow">
             <a href="job-single.html"></a>
             <div class="job-listing-logo">
               <img src="images/job_logo_1.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
@@ -613,7 +610,7 @@
       </div>
     </footer>
 
-  </div>
+
 
     <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
@@ -629,7 +626,7 @@
 
     <script src="js/bootstrap-select.min.js"></script>
 
-    <script src="js/custom.js"></script>
+   <script src="js/custom.js"></script>
 
 
   </body>
