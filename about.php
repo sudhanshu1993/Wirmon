@@ -52,14 +52,14 @@
               <li><a href="index.php" class="nav-link">Home</a></li>
               <li><a href="about.php" class="active">About</a></li>
               <li class="has-children">
-                <a href="job-listings.php">Job Listings</a>
+                <a>Jobs</a>
                 <ul class="dropdown">
-                  <li><a href="job-single.php">Job Single</a></li>
+                  <li><a href="job-listings.php">Job Single</a></li>
                   <li><a href="post-job.php">Post a Job</a></li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href="services.php">Pages</a>
+                <a>Services</a>
                 <ul class="dropdown">
                   <li><a href="services.php">Services</a></li>
                   <li><a href="service-single.php">Service Single</a></li>
