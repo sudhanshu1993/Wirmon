@@ -7302,10 +7302,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #157efb; }
+  color: #1f6040; }
   a:hover, a:focus {
     text-decoration: none;
-    color: #157efb;
+    color: #1f6040 ;
     outline: none !important; }
 
 h1, h2, h3, h4, h5,
@@ -9749,8 +9749,8 @@ h1, h2, h3, h4 {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    border: 1px solid #157efb;
-    background: #157efb;
+    border: 1px solid #1f6040;
+    background: #1f6040;
     margin-bottom: 1.5rem;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
@@ -10411,6 +10411,6 @@ h1, h2, h3, h4 {
   transform: translate(-50%, -50%); }
 
   #navicon{
-    
-		
+
+
   }

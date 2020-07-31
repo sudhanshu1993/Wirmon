@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Wirmon &mdash; Services</title>
+    <title>Wirmon &mdash; IT Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -62,8 +62,8 @@
               <li class="has-children">
                 <a href="services.php" class="active">Pages</a>
                 <ul class="dropdown">
-                  <li><a href="services.php" class="active">Services</a></li>
-                  <li><a href="service-single.php">Service Single</a></li>
+                  <li><a href="services.php">Services</a></li>
+                  <li><a href="service-single.php" class="active">Service Single</a></li>
                   <li><a href="blog-single.php">Blog Single</a></li>
                   <li><a href="portfolio.php">Portfolio</a></li>
                   <li><a href="portfolio-single.php">Portfolio Single</a></li>
@@ -96,63 +96,46 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <h1 class="text-white font-weight-bold">Services</h1>
+            <h1 class="text-white font-weight-bold">HR Service</h1>
             <div class="custom-breadcrumbs">
             <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>Services</strong></span>
+              <span class="text-white"><strong>HR Service</strong></span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ftco-section services-section bg-light " style="padding:2em 0 !important;">
-      <div class="container wow">
-        <div class="row mb-5 justify-content-center" style="margin-bottom:0px !important;">
-          <div class="col-md-12 text-center">
-            <h2 class="section-title mb-2 fadeInUp wow" style="animation-duration:2s;">Why Choose Us?</h2>
-            <p class="lead fadeInUp wow" style="animation-duration:2s;">The perfect blend of mature processes, flexible delivery models, effective project management, broad technology and domain expertise enable us to provide the best services.
-</p>
-          </div>
-        </div></div>
-    </section>
-
-
-    <section class="site-section services-section bg-light block__62849" id="next-section" style="padding-top:unset;">
+    <section class="site-section block__18514" id="next-section">
       <div class="container">
-
         <div class="row">
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+          <div class="col-lg-3 mr-auto">
+            <div class="border p-4 rounded">
+              <ul class="list-unstyled block__47528 mb-0">
+                <li><a href="hr-services.php">IT Services</a></li>
+                <li><span class="active">HR Services</span>
+                <ul><li>Staffing Services</li>
+                <li>Onboarding</li>
+              <li>Talent Acquisition</li>
+            <li>Training & Development</li></ul></li>
+                <li><a href="digital_marketing.php">Digital Marketing</a></li>
 
-            <a href="it-services.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-laptop d-block"></span></span>
-              <h3>IT Services</h3>
-              <p>Wirmon is your trusted source in IT services and support.We work towards customer success by delivering error free softwares with best quality & on-time deliveries.</p>
-            </a>
-
+              </ul>
+            </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-
-            <a href="hr-services.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-search d-block"></span></span>
-              <h3>HR Services</h3>
-              <p> Our HR Professionals have the expertise and experience to address the full spectrum of HR issues and requirements to help meet your immediate needs.</p>
-            </a>
-
+          <div class="col-lg-8">
+            <span class="text-primary d-block mb-5"><span class="icon-search display-1"></span></span>
+            <h2 class="mb-4">HR Services</h2>
+          <P>Human resources are the set of the people who make up the workforce of an organization, business sector, industry, or economy.
+          Human resources play an important part of developing and making a company or organization at the beginning or making a success at the end, due to the labour provided by employees.
+        wIRMON is 'One Stop Shop' for all your HR solutions under one roof!</P>
+        <p><h4>Staffing Services</h4>Hiring the right candidate is one of the biggest challenge of a staffing agency. If you are looking to recruit skilled employees for your organization, contact Wirmon HR today. We can help you with contractual as well as permanent staffing services.
+        Wirmon’s expertise in providing staffing solutions enables you to focus your energies on your core business activities and spend less time on filling the contractual roles and administering the HR processes for the contract employees.</p>
+       <p><h4>Onboarding</h4>We help new hires manage forms and tasks efficiently and make onboarding an experience to cherish for the new hire. </p>
+       <p><h4>Training & Development</h4>Help new hires manage forms and tasks efficiently and make onboarding an experience to cherish for the new hire. While individual managers may provide direct training when an employee is on the job, it’s the HR department that is responsible for educating new hires about company policies and procedures.</p>
+            <p><a href="#" class="btn btn-primary btn-md mt-4">Hire Us Now</a></p>
           </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-
-            <a href="digital_marketing.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-paper-plane d-block"></span></span>
-              <h3>Digital Marketing</h3>
-              <p>Wirmon help business owners and marketing executives use technology and the Internet to measurably improve their marketing performance and ROI</p>
-            </a>
-
-          </div>
-
         </div>
-
-
       </div>
     </section>
 
