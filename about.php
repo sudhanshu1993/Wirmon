@@ -18,6 +18,19 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/wow.js"></script>
+      <script>
+    var wow = new WOW(
+                          {
+                          boxClass:     'wow',      // default
+                          animateClass: 'animated', // default
+                          offset:       0,          // default
+                          mobile:       true,       // default
+                          live:         true        // default
+                        }
+                        )
+                        wow.init();
+                  </script>
   </head>
   <body id="top">
 
@@ -109,8 +122,8 @@
       <div class="container">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2 text-white">JobBoard Site Stats</h2>
-            <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde officiis recusandae sequi excepturi corrupti.</p>
+            <h2 class="section-title mb-2 text-white fadeInUp wow" style="animation-duration:2s;">Wirmon Site Stats</h2>
+            <p class="lead text-white fadeInUp wow" style="animation-duration:2s;">Our experienced staffing specialists cater to your industry-specific employment challenges.We connect talented professionals with exceptional companies.</p>
           </div>
         </div>
         <div class="row pb-0 block__19738 section-counter">
@@ -153,13 +166,13 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <a data-fancybox data-ratio="2" href="https://vimeo.com/317571768" class="block__96788">
-              <span class="play-icon"><span class="icon-play"></span></span>
+            <a data-fancybox data-ratio="2" href="#" class="block__96788">
+
               <img src="images/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow">
             </a>
           </div>
           <div class="col-lg-5 ml-auto">
-            <h2 class="section-title mb-3">JobBoard For Freelancers, Web Developers</h2>
+            <h2 class="section-title mb-3">Wirmon For Freelancers, Web Developers</h2>
             <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
             <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit!</p>
           </div>
@@ -171,13 +184,13 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
-            <a data-fancybox data-ratio="2" href="https://vimeo.com/317571768" class="block__96788">
-              <span class="play-icon"><span class="icon-play"></span></span>
+            <a data-fancybox data-ratio="2" href="#" class="block__96788">
+
               <img src="images/sq_img_8.jpg" alt="Image" class="img-fluid img-shadow">
             </a>
           </div>
           <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
-            <h2 class="section-title mb-3">JobBoard For Workers</h2>
+            <h2 class="section-title mb-3">Wirmon For Workers</h2>
             <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
             <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit!</p>
           </div>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="fonts/line-icons/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/flaticon.css">
 <style>
 .pb-3{animation-name: fadeInUp;animation-duration: 2s;}
 </style>
@@ -245,8 +246,9 @@
       <div class="container wow">
         <div class="row mb-5 justify-content-center">
           <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2 text-white fadeInUp wow" style="animation-duration:1.5s;">JobBoard Site Stats</h2>
-            <p class="lead text-white fadeInUp wow" style="animation-duration:2s;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde officiis recusandae sequi excepturi corrupti.</p>
+            <h2 class="section-title mb-2 text-white fadeInUp wow" style="animation-duration:2s;">Wirmon Site Stats</h2>
+            <p class="lead text-white fadeInUp wow" style="animation-duration:2s;">Our experienced staffing specialists cater to your industry-specific employment challenges.We connect talented professionals with exceptional companies.
+</p>
           </div>
         </div>
         <div class="row pb-0 block__19738 section-counter">
@@ -461,12 +463,12 @@
       </div>
     </section>
 
-    <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_11.jpg');">
+    <section class="py-5 bg-image overlay-primary fixed overlay fadeInUp wow" style="animation-duration: 1.5s;background-image: url('images/hero_11.jpg');">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-8">
             <h2 class="text-white">Looking For A Job?</h2>
-            <p class="mb-0 text-white lead">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora adipisci impedit.</p>
+            <p class="mb-0 text-white lead">Register Now!We’re in the business of building tomorrow.</p>
           </div>
           <div class="col-md-3 ml-auto">
             <a href="#" class="btn btn-warning btn-block btn-lg">Sign Up</a>
@@ -476,92 +478,58 @@
     </section>
 
 
-    <section class="site-section py-4">
+    <section class="ftco-section services-section bg-light " >
       <div class="container">
-
-        <div class="row align-items-center">
-          <div class="col-12 text-center mt-4 mb-5">
-            <div class="row justify-content-center">
-              <div class="col-md-7">
-                <h2 class="section-title mb-2">Company We've Helped</h2>
-                <p class="lead">Porro error reiciendis commodi beatae omnis similique voluptate rerum ipsam fugit mollitia ipsum facilis expedita tempora suscipit iste</p>
+        <div class="row d-flex">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-resume"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">Job Portal</h3>
+                <p class="fadeInUp wow" style="animation-duration:2.5s;">Search Millions of Jobs | Search Expert Candidates</p>
               </div>
             </div>
-
           </div>
-          <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_mailchimp.svg" alt="Image" class="img-fluid logo-1">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-collaboration"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">IT Services</h3>
+                <p class="fadeInUp wow" style="animation-duration:2.5s;">Custom IT services and solutions built specifically for your business!</p>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_paypal.svg" alt="Image" class="img-fluid logo-2">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-promotions"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">HR Services</h3>
+                <p class="fadeInUp wow" style="animation-duration:2.5s;">Help your organisation improve hiring!</p>
+              </div>
+            </div>
           </div>
-          <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_stripe.svg" alt="Image" class="img-fluid logo-3">
-          </div>
-          <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_visa.svg" alt="Image" class="img-fluid logo-4">
-          </div>
-
-          <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_apple.svg" alt="Image" class="img-fluid logo-5">
-          </div>
-          <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_tinder.svg" alt="Image" class="img-fluid logo-6">
-          </div>
-          <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_sony.svg" alt="Image" class="img-fluid logo-7">
-          </div>
-          <div class="col-6 col-lg-3 col-md-6 text-center">
-            <img src="images/logo_airbnb.svg" alt="Image" class="img-fluid logo-8">
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-employee"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">Digital Marketing</h3>
+                <p class="fadeInUp wow" style="animation-duration:2.5s;">Own the Internet!Increase your leads and sales.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="bg-light pt-5 testimony-full">
 
-        <div class="owl-carousel single-carousel">
-
-
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 align-self-center text-center text-lg-left">
-                <blockquote>
-                  <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
-                  <p><cite> &mdash; Corey Woods, @Dribbble</cite></p>
-                </blockquote>
-              </div>
-              <div class="col-lg-6 align-self-end text-center text-lg-right">
-                <img src="images/person_transparent_2.png" alt="Image" class="img-fluid mb-0">
-              </div>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 align-self-center text-center text-lg-left">
-                <blockquote>
-                  <p>&ldquo;Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae.&rdquo;</p>
-                  <p><cite> &mdash; Chris Peters, @Google</cite></p>
-                </blockquote>
-              </div>
-              <div class="col-lg-6 align-self-end text-center text-lg-right">
-                <img src="images/person_transparent.png" alt="Image" class="img-fluid mb-0">
-              </div>
-            </div>
-          </div>
-
-      </div>
-
-    </section>
 
     <section class="pt-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_11.jpg');">
       <div class="container">
         <div class="row">
           <div class="col-md-6 align-self-center text-center text-md-left mb-5 mb-md-0">
-            <h2 class="text-white">Get The Mobile Apps</h2>
-            <p class="mb-5 lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora adipisci impedit.</p>
+            <h2 class="text-white">Get The Mobile App</h2>
+            <p class="mb-5 lead text-white">Comming Soon....</p>
             <p class="mb-0">
               <a href="#" class="btn btn-dark btn-md px-4 border-width-2"><span class="icon-apple mr-3"></span>App Store</a>
               <a href="#" class="btn btn-dark btn-md px-4 border-width-2"><span class="icon-android mr-3"></span>Play Store</a>
