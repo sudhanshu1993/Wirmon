@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Wirmon &mdash; Services</title>
+    <title>Wirmon &mdash; IT Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -53,17 +53,17 @@
               <li><a href="index.php" class="nav-link">Home</a></li>
               <li><a href="about.php" >About</a></li>
               <li class="has-children">
-                <a href="job-listings.php">Jobs</a>
+                <a href="job-listings.php">Job Listings</a>
                 <ul class="dropdown">
                   <li><a href="job-single.php">Job Single</a></li>
                   <li><a href="post-job.php">Post a Job</a></li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href="services.php" class="active">Services</a>
+                <a href="services.php" class="active">Pages</a>
                 <ul class="dropdown">
-                  <li><a href="services.php" class="active">Services</a></li>
-                  <li><a href="service-single.php">Service Single</a></li>
+                  <li><a href="services.php">Services</a></li>
+                  <li><a href="service-single.php" class="active">Service Single</a></li>
                   <li><a href="blog-single.php">Blog Single</a></li>
                   <li><a href="portfolio.php">Portfolio</a></li>
                   <li><a href="portfolio-single.php">Portfolio Single</a></li>
@@ -96,63 +96,53 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <h1 class="text-white font-weight-bold">Services</h1>
+            <h1 class="text-white font-weight-bold">Digital Marketing</h1>
             <div class="custom-breadcrumbs">
             <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>Services</strong></span>
+              <span class="text-white"><strong>Digital Marketing</strong></span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="ftco-section services-section bg-light " style="padding:2em 0 !important;">
-      <div class="container wow">
-        <div class="row mb-5 justify-content-center" style="margin-bottom:0px !important;">
-          <div class="col-md-12 text-center">
-            <h2 class="section-title mb-2 fadeInUp wow" style="animation-duration:2s;">Why Choose Us?</h2>
-            <p class="lead fadeInUp wow" style="animation-duration:2s;">The perfect blend of mature processes, flexible delivery models, effective project management, broad technology and domain expertise enable us to provide the best services.
-</p>
-          </div>
-        </div></div>
-    </section>
-
-
-    <section class="site-section services-section bg-light block__62849" id="next-section" style="padding-top:unset;">
+    <section class="site-section block__18514" id="next-section">
       <div class="container">
-
         <div class="row">
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
+          <div class="col-lg-3 mr-auto">
+            <div class="border p-4 rounded">
+              <ul class="list-unstyled block__47528 mb-0">
+                <li><a href="hr-services.php">IT Services</a></li>
+                <li><a href="digital_marketing.php">HR Services</a></li>
+                <li><span class="active">Digital Marketing</span>
+                  <ul><li>Social Media Marketing</li>
+                  <li>SEO</li>
+                <li>Social Media Optimization</li>
+              <li>Pay Per Click (PPC)</li>
+            <li>Content Marketing</li>
+          <li>Google Analytics</li></ul></li>
 
-            <a href="it-services.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-laptop d-block"></span></span>
-              <h3>IT Services</h3>
-              <p>Wirmon is your trusted source in IT services and support.We work towards customer success by delivering error free softwares with best quality & on-time deliveries.</p>
-            </a>
-
+              </ul>
+            </div>
           </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-
-            <a href="hr-services.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-search d-block"></span></span>
-              <h3>HR Services</h3>
-              <p> Our HR Professionals have the expertise and experience to address the full spectrum of HR issues and requirements to help meet your immediate needs.</p>
-            </a>
-
+          <div class="col-lg-8">
+            <span class="text-primary d-block mb-5"><span class="icon-paper-plane display-1"></span></span>
+            <h2 class="mb-4">Digital Marketing</h2>
+        <p>Wirmon's digital marketing team will help you develop an online marketing strategy to drive more qualified visitors to your site and convert those visitors into leads and sales.</p>
+          <p><h4>Search Engine Optimization (SEO)</h4>SEO acts as a jetpack for your content marketing efforts.
+ SEO consists of on-page and off-page activities to boost your website’s visibility in search engine result pages (SERPs) for your preferred keywords.
+SEO was primarily text-based, but in recent year’s voice search has gained prominence as well, which is why your SEO activities need to have a conversational approach.
+</p>
+<p><h4>Social Media Marketing</h4>Social media marketing ensure you are present on the platforms your users are spending the most time on.
+Social media has also played a vital role in propagating video marketing and the ephemeral content wave.
+It enables two-way communication and your fans and followers can interact with you on your content through likes, comments, direct messages, or by posting on your official pages.
+</p>
+<p><h4>Content Marketing</h4>Content creation is the spine of your entire digital marketing strategy.
+Whether you’ve got a documented content marketing strategy or not, you’re creating content to inform, entertain, inspire, or persuade your buyers through other channels.
+</p>
+            <p><a href="#" class="btn btn-primary btn-md mt-4">Hire Us Now</a></p>
           </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-
-            <a href="digital_marketing.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-paper-plane d-block"></span></span>
-              <h3>Digital Marketing</h3>
-              <p>Wirmon help business owners and marketing executives use technology and the Internet to measurably improve their marketing performance and ROI</p>
-            </a>
-
-          </div>
-
         </div>
-
-
       </div>
     </section>
 
@@ -195,11 +185,10 @@
           <div class="col-6 col-md-3 mb-4 mb-md-0">
             <h3>Contact Us</h3>
             <div class="footer-social">
-            <a href="https://www.facebook.com/wirmonindia/"><span class="icon-facebook"></span></a>
-              <a href="https://twitter.com/Wirmonindia"><span class="icon-twitter"></span></a>
-              <a href="https://www.instagram.com/wirmon.in/"><span class="icon-instagram"></span></a>
-              <a href="https://www.linkedin.com/company/smsindiainfo/"><span class="icon-linkedin"></span></a>
-              <a href="https://in.pinterest.com/indiawirmon/"><span class="icon-pinterest"></span></a>
+              <a href="#"><span class="icon-facebook"></span></a>
+              <a href="#"><span class="icon-twitter"></span></a>
+              <a href="#"><span class="icon-instagram"></span></a>
+              <a href="#"><span class="icon-linkedin"></span></a>
             </div>
           </div>
         </div>
