@@ -53,14 +53,14 @@
               <li><a href="index.php" class="nav-link">Home</a></li>
               <li><a href="about.php" >About</a></li>
               <li class="has-children">
-                <a href="job-listings.php">Job Listings</a>
+                <a href="job-listings.php">Jobs</a>
                 <ul class="dropdown">
                   <li><a href="job-single.php">Job Single</a></li>
                   <li><a href="post-job.php">Post a Job</a></li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href="services.php">Pages</a>
+                <a href="services.php">Services</a>
                 <ul class="dropdown">
                   <li><a href="services.php">Services</a></li>
                   <li><a href="service-single.php">Service Single</a></li>
@@ -198,10 +198,11 @@
           <div class="col-6 col-md-3 mb-4 mb-md-0">
             <h3>Contact Us</h3>
             <div class="footer-social">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://www.facebook.com/wirmonindia/"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/Wirmonindia"><span class="icon-twitter"></span></a>
+              <a href="https://www.instagram.com/wirmon.in/"><span class="icon-instagram"></span></a>
+              <a href="https://www.linkedin.com/company/smsindiainfo/"><span class="icon-linkedin"></span></a>
+              <a href="https://in.pinterest.com/indiawirmon/"><span class="icon-pinterest"></span></a>
             </div>
           </div>
         </div>

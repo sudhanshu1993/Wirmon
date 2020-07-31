@@ -52,14 +52,14 @@
               <li><a href="index.php" class="nav-link">Home</a></li>
               <li><a href="about.php" >About</a></li>
               <li class="has-children">
-                <a href="job-listings.php">Job Listings</a>
+                <a href="job-listings.php">Jobs</a>
                 <ul class="dropdown">
                   <li><a href="job-single.php">Job Single</a></li>
                   <li><a href="post-job.php">Post a Job</a></li>
                 </ul>
               </li>
               <li class="has-children">
-                <a href="services.php">Pages</a>
+                <a href="services.php">Services</a>
                 <ul class="dropdown">
                   <li><a href="services.php">Services</a></li>
                   <li><a href="service-single.php">Service Single</a></li>
@@ -164,13 +164,13 @@
                         3. Click "Share" and choose "Embed map" tab
                         4. Copy only URL and paste it within the src="" field below
                 -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3215.6748988530226!2d85.74187112409825!3d20.293606348878882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1907438b22a2ff%3A0x640ca4bd8a3cef43!2sIIIT%2C%20P-Block!5e0!3m2!1sen!2sin!4v1593927151786!5m2!1sen!2sin" style="border:0;DISPLAY:none" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.117519018004!2d77.127912069028!3d12.636264505006679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae47b8ff5fa2ef%3A0xf51f6010a456e3df!2sMysore%20Rd%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1596223710073!5m2!1sen!2sin" width="480vw" height="270vh" style="border:0" allowfullscreen></iframe>
                                     </div>
               <p class="mb-0 font-weight-bold">Address</p>
               <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
 
               <p class="mb-0 font-weight-bold">Phone</p>
-              <p class="mb-4"><a href="#">+1 9487980784</a></p>
+              <p class="mb-4"><a href="#">+91 9487980784</a></p>
 
               <p class="mb-0 font-weight-bold">Email Address</p>
               <p class="mb-0"><a href="#">info@wirmon.in</a></p>
@@ -263,10 +263,11 @@
           <div class="col-6 col-md-3 mb-4 mb-md-0">
             <h3>Contact Us</h3>
             <div class="footer-social">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
+              <a href="https://www.facebook.com/wirmonindia/"><span class="icon-facebook"></span></a>
+              <a href="https://twitter.com/Wirmonindia"><span class="icon-twitter"></span></a>
+              <a href="https://www.instagram.com/wirmon.in/"><span class="icon-instagram"></span></a>
+              <a href="https://www.linkedin.com/company/smsindiainfo/"><span class="icon-linkedin"></span></a>
+              <a href="https://in.pinterest.com/indiawirmon/"><span class="icon-pinterest"></span></a>
             </div>
           </div>
         </div>
