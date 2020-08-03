@@ -172,9 +172,9 @@
             </a>
           </div>
           <div class="col-lg-5 ml-auto">
-            <h2 class="section-title mb-3">Wirmon For Freelancers, Web Developers</h2>
-            <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
-            <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit!</p>
+            <h2 class="section-title mb-3">Wirmon, IT MANAGED SERVICES</h2>
+            <p class="lead">Wirmon offers a variety of IT managed services. Whether you need an expert to manage your employement, IT services and Digital Marketing, need someone to design, maintain, onboard, or train your client or just need additional remote IT support for your in-house IT Department or others, we can help!</p>
+            <p >Are you looking to upgrade your business phone systems? Whether you are interested in adding new features or upgrade an existing system, Wirmon is a preferred service provider for top Employment, corporate training, IT and digital marketing services.</p>
           </div>
         </div>
       </div>
@@ -190,9 +190,14 @@
             </a>
           </div>
           <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
-            <h2 class="section-title mb-3">Wirmon For Workers</h2>
-            <p class="lead">Eveniet voluptatibus voluptates suscipit minima, cum voluptatum ut dolor, sed facere corporis qui, ea quisquam quis odit minus nulla vitae. Sit, voluptatem.</p>
-            <p>Ipsum harum assumenda in eum vel eveniet numquam, cumque vero vitae enim cupiditate deserunt eligendi officia modi consectetur. Expedita tempora quos nobis earum hic ex asperiores quisquam optio nostrum sit!</p>
+            <h2 class="section-title mb-3">Our Mission is Our Purpose</h2>
+            <p class="lead">Wirmon espouses the concept of conscious capitalism. Conscious capitalism focuses on the four tenets of higher purpose, conscious leadership, conscious culture, and stakeholder orientation. Wirmon brings these beliefs to life via our purpose.</p>
+            <p class="lead">Our Values</p>
+            <ol>
+                        <li>Exceeding Expectations</li>
+                        <li>Transparancy</li>
+                        <li>Being Passionate about Making a Difference</li>
+                        <li>Keeping employee Happy</li>
           </div>
         </div>
       </div>
@@ -200,46 +205,44 @@
 
 
     <section class="site-section">
-      <div class="container">
-        <div class="row mb-5">
+      <div class="container" style="padding:0px">
+      <div class="row mb-5">
           <div class="col-12 text-center" data-aos="fade">
             <h2 class="section-title mb-3">Our Team</h2>
           </div>
         </div>
-
-        <div class="row align-items-center block__69944">
-
-          <div class="col-md-6">
-            <img src="images/person_6.jpg" alt="Image" class="img-fluid mb-4 rounded">
-          </div>
-
-          <div class="col-md-6">
-            <h3>Elisabeth Smith</h3>
-            <p class="text-muted">Creative Director</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
-            <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
-            </div>
-          </div>
-
-          <div class="col-md-6 order-md-2 ml-md-auto">
-            <img src="images/person_5.jpg" alt="Image" class="img-fluid mb-4 rounded">
-          </div>
-
-          <div class="col-md-6">
-            <h3>Chintan Patel</h3>
-            <p class="text-muted">Creative Director</p>
-            <p>Soluta quasi cum delectus eum facilis recusandae nesciunt molestias accusantium libero dolores repellat id in dolorem laborum ad modi qui at quas dolorum voluptatem voluptatum repudiandae voluptatibus ut? Ex vel  ad explicabo iure ipsa possimus consectetur neque rem molestiae eligendi velit?.</p>
-            <div class="social mt-4">
-              <a href="#"><span class="icon-facebook"></span></a>
-              <a href="#"><span class="icon-twitter"></span></a>
-              <a href="#"><span class="icon-instagram"></span></a>
-              <a href="#"><span class="icon-linkedin"></span></a>
-            </div>
-          </div>
+      <div class="card" style="width:24.5%;display:inline-block;">
+    <img class="card-img-top" src="images/person_3.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:24.5%;display:inline-block;">
+    <img class="card-img-top" src="images/person_3.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:24.5%;display:inline-block;">
+    <img class="card-img-top" src="images/person_3.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
+  <div class="card" style="width:24.5%;display:inline-block;">
+    <img class="card-img-top" src="images/person_3.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">John Doe</h4>
+      <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+      <a href="#" class="btn btn-primary">See Profile</a>
+    </div>
+  </div>
       </div>
     </section>
 
