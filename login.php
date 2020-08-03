@@ -108,63 +108,124 @@
 
     <section class="site-section">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <h2 class="mb-4">Sign Up To JobBoard</h2>
-            <form action="#" class="p-4 border rounded">
+     
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-xl-12 ftcon-animate wow fadeInUp mb-6 pb-6" data-scrollax=" properties: { translateY: '70%' }" style="animation-duration: 1.5s;margin-top:-10%;">
+          	<p class="mb-4 mt-5 pt-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have <span class="number" data-number="850000">0</span> great job offers you deserve!</p>
+            <h1 class="mb-5" style="opacity: 0.827778;font-weight: 800;transform: translateZ(0px) translateY(-3.22917%);">Your Dream <br><span>Job is Waiting</span></h1>
 
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Email</label>
-                  <input type="text" id="fname" class="form-control" placeholder="Email address">
-                </div>
-              </div>
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Password</label>
-                  <input type="password" id="fname" class="form-control" placeholder="Password">
-                </div>
-              </div>
-              <div class="row form-group mb-4">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Re-Type Password</label>
-                  <input type="password" id="fname" class="form-control" placeholder="Re-type Password">
-                </div>
-              </div>
+						<div class="ftcon-search">
+							<div class="row" style="margin-right:0;margin-left:0; ">
+              
+		            <div class="col-md-12 nav-link-wrap">
+                <h2 class="mb-4">Sign Up</h2>
+			            <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+			              <a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Find a Job</a>
 
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Sign Up" class="btn px-4 btn-primary text-white">
-                </div>
-              </div>
+			              <a class="nav-link" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Find a Candidate</a>
 
-            </form>
+			            </div>
+			          </div>
+			          <div class="col-lg-6 tab-wrap">
+             
+			            <div class="tab-content" id="v-pills-tabContent">
+
+			              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+                                <form action="#" class="p-4 border rounded">
+
+                                <div class="row form-group">
+                                  <div class="col-md-12 mb-3 mb-md-0">
+                                    <label class="text-black" for="fname">Email</label>
+                                    <input type="text" id="fname" class="form-control" placeholder="Email address">
+                                  </div>
+                                </div>
+                                <div class="row form-group">
+                                  <div class="col-md-12 mb-3 mb-md-0">
+                                    <label class="text-black" for="fname">Password</label>
+                                    <input type="password" id="fname" class="form-control" placeholder="Password">
+                                  </div>
+                                </div>
+                                <div class="row form-group mb-4">
+                                  <div class="col-md-12 mb-3 mb-md-0">
+                                    <label class="text-black" for="fname">Re-Type Password</label>
+                                    <input type="password" id="fname" class="form-control" placeholder="Re-type Password">
+                                  </div>
+                                </div>
+
+                                <div class="row form-group">
+                                  <div class="col-md-12">
+                                    <input type="submit" value="Sign Up" class="btn px-4 btn-primary text-white">
+                                  </div>
+                                </div>
+
+                                </form>
+			              </div>
+
+			              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+                              <form action="#" class="p-4 border rounded">
+
+                            <div class="row form-group">
+                              <div class="col-md-12 mb-3 mb-md-0">
+                                <label class="text-black" for="fname">Email</label>
+                                <input type="text" id="fname" class="form-control" placeholder="Email address">
+                              </div>
+                            </div>
+                            <div class="row form-group">
+                              <div class="col-md-12 mb-3 mb-md-0">
+                                <label class="text-black" for="fname">Password</label>
+                                <input type="password" id="fname" class="form-control" placeholder="Password">
+                              </div>
+                            </div>
+                            <div class="row form-group mb-4">
+                              <div class="col-md-12 mb-3 mb-md-0">
+                                <label class="text-black" for="fname">Re-Type Password</label>
+                                <input type="password" id="fname" class="form-control" placeholder="Re-type Password">
+                              </div>
+                            </div>
+
+                            <div class="row form-group">
+                              <div class="col-md-12">
+                                <input type="submit" value="Sign Up" class="btn px-4 btn-primary text-white">
+                              </div>
+                            </div>
+
+                            </form>
+			              </div>
+			            </div>
+			          </div>
+                <div class="col-lg-6">
+                  <h2 class="mb-4">Log In To JobBoard</h2>
+                  <form action="#" class="p-4 border rounded">
+
+                    <div class="row form-group">
+                      <div class="col-md-12 mb-3 mb-md-0">
+                        <label class="text-black" for="fname">Email</label>
+                        <input type="text" id="fname" class="form-control" placeholder="Email address">
+                      </div>
+                    </div>
+                    <div class="row form-group mb-4">
+                      <div class="col-md-12 mb-3 mb-md-0">
+                        <label class="text-black" for="fname">Password</label>
+                        <input type="password" id="fname" class="form-control" placeholder="Password">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                        <input type="submit" value="Log In" class="btn px-4 btn-primary text-white">
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+			        </div>
+		        </div>
           </div>
-          <div class="col-lg-6">
-            <h2 class="mb-4">Log In To JobBoard</h2>
-            <form action="#" class="p-4 border rounded">
+        
+     
 
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Email</label>
-                  <input type="text" id="fname" class="form-control" placeholder="Email address">
-                </div>
-              </div>
-              <div class="row form-group mb-4">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Password</label>
-                  <input type="password" id="fname" class="form-control" placeholder="Password">
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12">
-                  <input type="submit" value="Log In" class="btn px-4 btn-primary text-white">
-                </div>
-              </div>
-
-            </form>
-          </div>
+      
+          
         </div>
       </div>
     </section>
