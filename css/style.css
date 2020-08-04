@@ -7288,7 +7288,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Nunito Sans", Arial, sans-serif;
   background: #fff;
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 1.8;
   font-weight: 400;
   color: #999999; }
@@ -8839,7 +8839,7 @@ textarea.form-control {
         left: auto; } }
     .site-navbar .site-logo a {
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       letter-spacing: .2rem;
       text-transform: uppercase; }
       .site-navbar .site-logo a:hover {
@@ -9239,7 +9239,7 @@ textarea.form-control {
 
 body {
   font-weight: 400;
-  font-size: 1rem;
+
   line-height: 1.7;
   position: relative; }
   body:after {

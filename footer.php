@@ -5,6 +5,7 @@
     border-top: 1px solid #eee;
 }
 #footer .nav>li>a {
+  font-size: 12px;
     padding: 10px 11px;
 }
 #footer .row{display: -webkit-box !important;}
