@@ -22,7 +22,8 @@
 .card{
   padding-right:2%;
   border: 0px !important;
-  }</style>
+  }
+</style>
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
