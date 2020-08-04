@@ -164,10 +164,10 @@
                         3. Click "Share" and choose "Embed map" tab
                         4. Copy only URL and paste it within the src="" field below
                 -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1824.117519018004!2d77.127912069028!3d12.636264505006679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae47b8ff5fa2ef%3A0xf51f6010a456e3df!2sMysore%20Rd%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1596223710073!5m2!1sen!2sin" width="480vw" height="270vh" style="border:0" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.4108182702757!2d77.46769701482103!3d12.881284390915221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae39fe26760b31%3A0x1c8cb1abc4b5e4ea!2sProvident%20Sunworth%2C%20Block%206G!5e0!3m2!1sen!2sin!4v1596535923710!5m2!1sen!2sin" width="480vw" height="270vh" style="border:0" allowfullscreen></iframe>
                                     </div>
               <p class="mb-0 font-weight-bold">Address</p>
-              <p class="mb-4">Mysore road, kumbalgod. Karnataka 560060</p>
+              <p class="mb-4">6G 405,Kengeri, Bangalore, Karnataka 560060</p>
 
               <p class="mb-0 font-weight-bold">Phone</p>
               <p class="mb-4"><a href="#">+91 9487980784</a></p>
