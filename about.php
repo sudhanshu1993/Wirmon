@@ -193,7 +193,7 @@
             <h2 class="section-title mb-3">Our Mission is Our Purpose</h2>
             <p class="lead">Wirmon espouses the concept of conscious capitalism. Conscious capitalism focuses on the four tenets of higher purpose, conscious leadership, conscious culture, and stakeholder orientation. Wirmon brings these beliefs to life via our purpose.</p>
             <p class="lead">Our Values</p>
-            <ol style="color: #999999;">
+            <ol style="color: #999999;" >
                         <li>Exceeding Expectations</li>
                         <li>Transparancy</li>
                         <li>Being Passionate about Making a Difference</li>
