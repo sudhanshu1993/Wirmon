@@ -2,33 +2,38 @@
 include "dbconn.php";
 
 if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['id']) && !empty($_GET['id'])){
-    // Verify data
-    $email =$_GET['email']; // Set email variable
 
+      $email =$_GET['email']; // Set email variable
     $id =$_GET['id']; // Set hash variable
-
     $stmt = $conn->prepare("select email, unique_id, active from jobseeker where email='$email' and unique_id='$id' and active='0'");
-
       $stmt->execute();
-
       if($stmt->rowCount() > 0)
       {
-
               $stmt1 = $conn->prepare('update jobseeker set active="1" where email=?');
               $stmt1->bindParam(1, $email);
               $stmt1->execute();
-
               echo '<script>alert("Account Verified!Login to Continue")</script>';
-
-
-
     }
-    else{
-      echo '<script>alert("Invalid URl or account already activated!")</script>';
-
-
-    }
+    if($stmt->rowCount() != True){
+      $email =$_GET['email'];
+  // Set email variable
+  $id =$_GET['id']; // Set hash variable
+  $stmt = $conn->prepare("select email, unique_id, active from employer where email='$email' and unique_id='$id' and active='0'");
+    $stmt->execute();
+    if($stmt->rowCount() > 0)
+    {       $stmt1 = $conn->prepare('update employer set active="1" where email=?');
+            $stmt1->bindParam(1, $email);
+            $stmt1->execute();
+            echo '<script>alert("Account Verified!Login to Continue")</script>';
+  }
+  else{
+    echo '<script>alert("Invalid URl or account already activated!")</script>';
+  }
 }
+
+
+}
+
   require 'PHPMailer/PHPMailerAutoload.php';
   require_once('PHPMailer/class.phpmailer.php');
   require_once('PHPMailer/class.smtp.php');
@@ -37,7 +42,7 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['id']) && !em
   include_once "webutils.php";
   $utils = new webutils();
 $result = $email = $pass = $re_pass = $id = "";
-$mailSendToUserJobSeeker = false;
+ $mailSendToUserJobSeeker = false;
 if(isset($_POST['signup_jobseeker'])) {
     if($_POST['email'] != null && !empty($_POST['email']))
     {
@@ -54,6 +59,52 @@ if(isset($_POST['signup_jobseeker'])) {
               {
 
               $stmt = $conn->prepare('insert into jobseeker (unique_id,email,password) VALUES(?,?,?)');
+              $stmt->bindParam(1, $id);
+              $stmt->bindParam(2, $email);
+              $stmt->bindParam(3, $pass);
+
+
+              $stmt->execute();
+
+              $result = "<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Success!</strong> Signup Successfull.Login to continue</div>";
+
+            }
+          }
+            catch (PDOException $e) {
+                 echo '{"error":{"text":' . $e->getMessage() . '}}';
+             }
+        }
+        else {
+          $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Password did not Match!!</div>";
+        }
+      }
+        else
+        {
+            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Password.</div>";
+        }
+    }
+    else
+    {
+        $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Email Address.</div>";
+    }
+}
+
+if(isset($_POST['signup_employer'])) {
+    if($_POST['email'] != null && !empty($_POST['email']))
+    {
+        if($_POST['pass'] != null && !empty($_POST['pass']))
+        {
+            if(($_POST['re_pass'] !=null) && ($_POST['pass'] == $_POST['re_pass']))
+            {
+                try {
+              $email = $_POST['email'];
+              $pass = $_POST['pass'];
+              $id = uniqid("em");
+              $mailSendToUserJobSeeker = $utils->userMailToEmployer($mail, $email,$id);
+              if($mailSendToUserJobSeeker)
+              {
+
+              $stmt = $conn->prepare('insert into employer (unique_id,email,password) VALUES(?,?,?)');
               $stmt->bindParam(1, $id);
               $stmt->bindParam(2, $email);
               $stmt->bindParam(3, $pass);
