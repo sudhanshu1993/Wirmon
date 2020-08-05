@@ -1,3 +1,48 @@
+<?php
+  include "dbconn.php";
+$result = $email = $pass = $re_pass = $id = "";
+if(isset($_POST['signup_jobseeker'])) {
+    if($_POST['email'] != null && !empty($_POST['email']))
+    {
+        if($_POST['pass'] != null && !empty($_POST['pass']))
+        {
+            if(($_POST['re_pass'] !=null) && ($_POST['pass'] == $_POST['re_pass']))
+            {
+                try {
+              $email = $_POST['email'];
+              $pass = $_POST['pass'];
+              $id = uniqid("js");
+              $stmt = $conn->prepare('insert into jobseeker (unique_id,email,password) VALUES(?,?,?)');
+              $stmt->bindParam(1, $id);
+              $stmt->bindParam(2, $email);
+              $stmt->bindParam(3, $pass);
+
+
+              $stmt->execute();
+
+              $result = "<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Success!</strong> Signup Successfull.Login to continue</div>";
+
+            }
+            catch (PDOException $e) {
+                 echo '{"error":{"text":' . $e->getMessage() . '}}';
+             }
+        }
+        else {
+          $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Password did not Match!!</div>";
+        }
+      }
+        else
+        {
+            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Password.</div>";
+        }
+    }
+    else
+    {
+        $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Email Address.</div>";
+    }
+}
+?>
+
 
 <!doctype html>
 <html lang="en">
@@ -108,7 +153,7 @@
 
     <section class="site-section">
       <div class="container">
-     
+<div id="loginResult"><?php echo $result; ?></div>
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-xl-12 ftcon-animate wow fadeInUp mb-6 pb-6" data-scrollax=" properties: { translateY: '70%' }" style="animation-duration: 1.5s;margin-top:-10%;">
           	<p class="mb-4 mt-5 pt-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have <span class="number" data-number="850000">0</span> great job offers you deserve!</p>
@@ -116,7 +161,7 @@
 
 						<div class="ftcon-search">
 							<div class="row" style="margin-right:0;margin-left:0; ">
-              
+
 		            <div class="col-md-12 nav-link-wrap">
                 <h2 class="mb-4">Sign Up</h2>
 			            <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -127,34 +172,34 @@
 			            </div>
 			          </div>
 			          <div class="col-lg-6 tab-wrap">
-             
+
 			            <div class="tab-content" id="v-pills-tabContent">
 
 			              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-                                <form action="#" class="p-4 border rounded">
+                                <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
 
                                 <div class="row form-group">
                                   <div class="col-md-12 mb-3 mb-md-0">
                                     <label class="text-black" for="fname">Email</label>
-                                    <input type="text" id="fname" class="form-control" placeholder="Email address">
+                                    <input type="text" id="fname" name="email" class="form-control" placeholder="Email address">
                                   </div>
                                 </div>
                                 <div class="row form-group">
                                   <div class="col-md-12 mb-3 mb-md-0">
                                     <label class="text-black" for="fname">Password</label>
-                                    <input type="password" id="fname" class="form-control" placeholder="Password">
+                                    <input type="password" id="fname" name="pass" class="form-control" placeholder="Password">
                                   </div>
                                 </div>
                                 <div class="row form-group mb-4">
                                   <div class="col-md-12 mb-3 mb-md-0">
                                     <label class="text-black" for="fname">Re-Type Password</label>
-                                    <input type="password" id="fname" class="form-control" placeholder="Re-type Password">
+                                    <input type="password" id="fname" name="re_pass" class="form-control" placeholder="Re-type Password">
                                   </div>
                                 </div>
 
                                 <div class="row form-group">
                                   <div class="col-md-12">
-                                    <input type="submit" value="Sign Up" class="btn px-4 btn-primary text-white">
+                                    <input type="submit" value="Sign Up" name="signup_jobseeker" class="btn px-4 btn-primary text-white">
                                   </div>
                                 </div>
 
@@ -162,30 +207,30 @@
 			              </div>
 
 			              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
-                              <form action="#" class="p-4 border rounded">
+                              <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
 
                             <div class="row form-group">
                               <div class="col-md-12 mb-3 mb-md-0">
                                 <label class="text-black" for="fname">Email</label>
-                                <input type="text" id="fname" class="form-control" placeholder="Email address">
+                                <input type="text" id="fname" name="email" class="form-control" placeholder="Email address">
                               </div>
                             </div>
                             <div class="row form-group">
                               <div class="col-md-12 mb-3 mb-md-0">
                                 <label class="text-black" for="fname">Password</label>
-                                <input type="password" id="fname" class="form-control" placeholder="Password">
+                                <input type="password" id="fname" name="pass" class="form-control" placeholder="Password">
                               </div>
                             </div>
                             <div class="row form-group mb-4">
                               <div class="col-md-12 mb-3 mb-md-0">
                                 <label class="text-black" for="fname">Re-Type Password</label>
-                                <input type="password" id="fname" class="form-control" placeholder="Re-type Password">
+                                <input type="password" id="fname" name="re_pass" class="form-control" placeholder="Re-type Password">
                               </div>
                             </div>
 
                             <div class="row form-group">
                               <div class="col-md-12">
-                                <input type="submit" value="Sign Up" class="btn px-4 btn-primary text-white">
+                                <input type="submit" value="Sign Up" name="signup_employer" class="btn px-4 btn-primary text-white">
                               </div>
                             </div>
 
@@ -195,24 +240,24 @@
 			          </div>
                 <div class="col-lg-6">
                   <h2 class="mb-4">Log In To JobBoard</h2>
-                  <form action="#" class="p-4 border rounded">
+                  <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
 
                     <div class="row form-group">
                       <div class="col-md-12 mb-3 mb-md-0">
                         <label class="text-black" for="fname">Email</label>
-                        <input type="text" id="fname" class="form-control" placeholder="Email address">
+                        <input type="text" id="fname" name="email" class="form-control" placeholder="Email address">
                       </div>
                     </div>
                     <div class="row form-group mb-4">
                       <div class="col-md-12 mb-3 mb-md-0">
                         <label class="text-black" for="fname">Password</label>
-                        <input type="password" id="fname" class="form-control" placeholder="Password">
+                        <input type="password" id="fname" name="pass" class="form-control" placeholder="Password">
                       </div>
                     </div>
 
                     <div class="row form-group">
                       <div class="col-md-12">
-                        <input type="submit" value="Log In" class="btn px-4 btn-primary text-white">
+                        <input type="submit" value="Log In" name="login" class="btn px-4 btn-primary text-white">
                       </div>
                     </div>
 
@@ -221,11 +266,11 @@
 			        </div>
 		        </div>
           </div>
-        
-     
 
-      
-          
+
+
+
+
         </div>
       </div>
     </section>
