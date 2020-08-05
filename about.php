@@ -220,38 +220,40 @@
             <h2 class="section-title mb-3">Our Team</h2>
           </div>
         </div>
-      <div class="card" style="width:24.5%;display:inline-block;">
+        <div>
+      <div class="card" style="display:inline-block;">
     <img class="card-img-top" src="images/Anil.jpeg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title"><b>Anil Chaurasia</b></h4>
-      <p class="card-text lead">Founder and CEO</p>
-      <a href="https://www.linkedin.com/in/cryspona/" target="_blank" class="btn btn-primary">See Profile</a>
+      <p class="card-text card-subtitle">Founder and CEO</p>
+      <a href="https://www.linkedin.com/in/cryspona/" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
     </div>
   </div>
-  <div class="card" style="width:24.5%;display:inline-block;">
+  <div class="card" style="display:inline-block;">
     <img class="card-img-top" src="images/Reenu.jpeg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title"><b>Reenu Chaurasiya</b></h4>
-      <p class="card-text lead">VP Human Resource</p>
-      <a href="https://www.linkedin.com/in/reenu-chaurasiya-0845921ab/" target="_blank" class="btn btn-primary">See Profile</a>
+      <p class="card-text card-subtitle">VP Human Resource</p>
+      <a href="https://www.linkedin.com/in/reenu-chaurasiya-0845921ab/" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
     </div>
   </div>
-  <div class="card" style="width:24.5%;display:inline-block;">
+  <div class="card" style="display:inline-block;">
     <img class="card-img-top" src="images/Soundarya.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title"><b>Soundarya Karli</b></h4>
-      <p class="card-text lead">IT Manager</p>
-      <a href="https://www.linkedin.com/in/soundarya-karli" target="_blank" class="btn btn-primary">See Profile</a>
+      <p class="card-text  card-subtitle">IT Manager</p>
+      <a href="https://www.linkedin.com/in/soundarya-karli" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
     </div>
   </div>
-  <div class="card" style="width:24.5%;display:inline-block;">
+  <div class="card" style="display:inline-block;">
     <img class="card-img-top" src="images/Sneha.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title"><b>Sneha Gobinathan</b></h4>
-      <p class="card-text lead" style="font-size:19.5px;">Digital Marketing Manager</p>
-      <a href="https://in.linkedin.com/in/sneha-gobinathan-267b391a9?trk=people-guest_people_search-card" target="_blank" class="btn btn-primary">See Profile</a>
+      <p class="card-text card-subtitle" >Digital Marketing Manager</p>
+      <a href="https://in.linkedin.com/in/sneha-gobinathan-267b391a9?trk=people-guest_people_search-card" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
     </div>
   </div>
+                      </div>
       </div>
     </section>
 

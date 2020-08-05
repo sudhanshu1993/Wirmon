@@ -111,10 +111,10 @@
      
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-xl-12 ftcon-animate wow fadeInUp mb-6 pb-6" data-scrollax=" properties: { translateY: '70%' }" style="animation-duration: 1.5s;margin-top:-10%;">
-          	<p class="mb-4 mt-5 pt-5" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have <span class="number" data-number="850000">0</span> great job offers you deserve!</p>
-            <h1 class="mb-5" style="opacity: 0.827778;font-weight: 800;transform: translateZ(0px) translateY(-3.22917%);">Your Dream <br><span>Job is Waiting</span></h1>
+          	<p class="mb-4 mt-5 pt-5" style="display:none;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have <span class="number" data-number="850000">0</span> great job offers you deserve!</p>
+            <h1 class="mb-5" style="opacity: 0.827778;font-weight: 800;transform: translateZ(0px) translateY(-3.22917%);display:none;">Your Dream <br><span>Job is Waiting</span></h1>
 
-						<div class="ftcon-search">
+						<div class="ftcon-search" style = "padding-top:10vh">
 							<div class="row" style="margin-right:0;margin-left:0; ">
               
 		            <div class="col-md-12 nav-link-wrap">

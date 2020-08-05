@@ -66,7 +66,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <div class="container-fluid" style=" padding-left: 0; padding-right: 0;padding-top:3%;">
 
-    <div id="footer" class="text-center s4-notdlg">
+    <div id="footer" class="text-center s4-notdlg" style="background:black;">
       <a href="#top" class="smoothscroll scroll-top">
         <span class="icon-keyboard_arrow_up"></span>
       </a>
@@ -111,7 +111,7 @@
         <div class="container">
             <!-- Fixed Container-->
             <div class="row">
-                <div class="col-lg-12 paddingBtm10">
+                <div class="col-lg-12 paddingBtm10" style="color: white;">
                     © Content Owned and Updated by Wirmon India Pvt Ltd
                 </div>
                 <div class="col-lg-12 paddingBtm10 bestviewedtxt">
