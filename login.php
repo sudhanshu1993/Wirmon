@@ -170,6 +170,40 @@ if(isset($_POST['login_jobseeker'])) {
                 echo '{"error":{"text":'. $e->getMessage() .'}}';
             }
         }
+
+        if(isset($_POST['login_emp'])) {
+          try{
+
+                        $email = $_POST['email'];
+                        $pass = $_POST['pass'];
+                        $stmt = $conn->prepare("select email,password,active from employer where email = ? and password = ?");
+                        $stmt->bindParam(1, $email);
+                        $stmt->bindParam(2, $pass);
+                        $stmt->execute();
+                        if($stmt->rowCount() > 0)
+                        {
+                            $data = $stmt->fetchAll();
+                            foreach($data as $row) {
+                                if($row['active'] == '1')
+                                {
+                                    $_SESSION['email'] = $email;
+                                    header("Location: index.php");
+                                }
+                                else
+                                {
+                                    $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Your account is inactive.Please verify your email id first.</div>";
+                                }
+                            }
+                        }
+                        else
+                        {
+                            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Valid Email Address.</div>";
+                        }
+                    }
+                    catch(PDOException $e) {
+                        echo '{"error":{"text":'. $e->getMessage() .'}}';
+                    }
+                }
 ?>
 
 
