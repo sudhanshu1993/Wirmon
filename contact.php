@@ -1,3 +1,79 @@
+<?php
+require 'PHPMailer/PHPMailerAutoload.php';
+require_once('PHPMailer/class.phpmailer.php');
+require_once('PHPMailer/class.smtp.php');
+$mail = new PHPMailer();
+include_once 'webutils.php';
+$utils = new webutils();
+
+$result = $name = $mobile = $email = $subject = $message = "";
+$mailSendToAdmin = $mailSendToUser = false;
+if(isset($_POST['submit']))
+{
+    if(isset($_POST['name']) && !empty($_POST['name']))
+    {
+        if(isset($_POST['mobile']) && !empty($_POST['mobile']))
+        {
+            if(preg_match('/^[0-9]{10}+$/', $_POST['mobile']))
+            {
+                if(isset($_POST['email']) && !empty($_POST['email']))
+                {
+                  if(isset($_POST['subject']) && !empty($_POST['subject']))
+                  {
+                    if(isset($_POST['message']) && !empty($_POST['message']))
+                    {
+                        $name = $_POST['name'];
+                        $mobile = $_POST['mobile'];
+                        $email = $_POST['email'];
+                        $subject = $_POST['subject'];
+                        $message = $_POST['message'];
+
+                        //adminMail
+                        $mailSendToAdmin = $utils->adminContactForm($mail, $name, $mobile, $email, $subject, $message);
+                        if($mailSendToAdmin)
+                        {
+                            //userMail
+                            $mailSendToUser = $utils->userContactForm($mail, $name, $email);
+                            if($mailSendToUser)
+                            {
+                                $result = "<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Success!</strong> Thanks For Contacting Us.We will get back to you soon!</div>";
+                            }
+                        }
+
+                    }
+                    else
+                    {
+                        $result =  '<div class="alert alert-warning alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> <strong>Warning!</strong> Please Enter Your Message.</div>';
+                    }
+                }
+                else
+                {
+                    $result =  '<div class="alert alert-warning alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> <strong>Warning!</strong> Please Enter Your Subject.</div>';
+                }
+
+                }
+                else
+                {
+                    $result =  '<div class="alert alert-warning alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> <strong>Warning!</strong> Please Enter Email Address.</div>';
+                }
+            }
+            else
+            {
+                $result =  '<div class="alert alert-warning alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> <strong>Warning!</strong> Please Enter Valid Phone Number.</div>';
+            }
+        }
+        else
+        {
+            $result =  '<div class="alert alert-warning alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> <strong>Warning!</strong> Please Enter Phone Number.</div>';
+        }
+    }
+    else
+    {
+        $result =  '<div class="alert alert-warning alert-dismissible"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> <strong>Warning!</strong> Please Enter Name.</div>';
+    }
+}
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -107,18 +183,20 @@
 
     <section class="site-section" id="next-section">
       <div class="container">
+        <div id="resultOfForm"><?php echo $result; ?></div>
         <div class="row">
           <div class="col-lg-6 mb-5 mb-lg-0">
-            <form action="#" class="">
+
+            <form action="<?=($_SERVER['PHP_SELF'])?>" method="post">
 
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
-                  <input type="text" id="fname" class="form-control">
+                  <label class="text-black" for="fname">Name</label>
+                  <input type="text" name="name" id="name" class="form-control">
                 </div>
                 <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
-                  <input type="text" id="lname" class="form-control">
+                  <label class="text-black" for="lname">Phone Number</label>
+                  <input type="text" name="mobile" id="mobile" pattern="[0-9]{10}" class="form-control">
                 </div>
               </div>
 
@@ -126,7 +204,7 @@
 
                 <div class="col-md-12">
                   <label class="text-black" for="email">Email</label>
-                  <input type="email" id="email" class="form-control">
+                  <input type="email" name="email" id="email" class="form-control">
                 </div>
               </div>
 
@@ -134,7 +212,7 @@
 
                 <div class="col-md-12">
                   <label class="text-black" for="subject">Subject</label>
-                  <input type="subject" id="subject" class="form-control">
+                  <input type="subject" name="subject" id="subject" class="form-control">
                 </div>
               </div>
 
@@ -147,7 +225,7 @@
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                  <input type="submit" name="submit" value="Send Message" class="btn btn-primary btn-md text-white">
                 </div>
               </div>
 
