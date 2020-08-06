@@ -9,8 +9,9 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['id']) && !em
       $stmt->execute();
       if($stmt->rowCount() > 0)
       {
-              $stmt1 = $conn->prepare('update jobseeker set active="1" where email=?');
+              $stmt1 = $conn->prepare('update jobseeker set active="1" where email=? and unique_id=?');
               $stmt1->bindParam(1, $email);
+              $stmt1->bindParam(2, $id);
               $stmt1->execute();
               echo '<script>alert("Account Verified!Login to Continue")</script>';
     }
@@ -21,8 +22,9 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['id']) && !em
   $stmt = $conn->prepare("select email, unique_id, active from employer where email='$email' and unique_id='$id' and active='0'");
     $stmt->execute();
     if($stmt->rowCount() > 0)
-    {       $stmt1 = $conn->prepare('update employer set active="1" where email=?');
+    {       $stmt1 = $conn->prepare('update employer set active="1" where email=? and unique_id=?');
             $stmt1->bindParam(1, $email);
+            $stmt1->bindParam(2, $id);
             $stmt1->execute();
             echo '<script>alert("Account Verified!Login to Continue")</script>';
   }
@@ -134,6 +136,65 @@ if(isset($_POST['signup_employer'])) {
         $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Email Address.</div>";
     }
 }
+
+if(isset($_POST['login'])) {
+    if($_POST['email'] != null && !empty($_POST['email']))
+    {
+        if($_POST['pass'] != null && !empty($_POST['pass']))
+        {
+            try{
+
+                $email = $_POST['email'];
+                $pass = $_POST['pass'];
+                $stmt = $conn->prepare("select email, from users where email = ? and role = ?");
+                $stmt->bindParam(1, $emailId);
+                $stmt->bindParam(2, $userRole);
+                $stmt->execute();
+                if($stmt->rowCount() > 0)
+                {
+                    $data = $stmt->fetchAll();
+                    foreach($data as $row) {
+                        $dbPass = $row['pass'];
+
+                        if(password_verify($password, $dbPass))
+                        {
+                            session_start();
+
+                            //unset sessions
+                            unset($_SESSION['USERROLE']);
+                            unset($_SESSION['USEREMAIL']);
+
+                            $_SESSION['USERROLE'] = $userRole;
+                            $_SESSION['USEREMAIL'] = $emailId;
+
+                            header("Location: admin/dashboard");
+                        }
+                        else
+                        {
+                            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Valid Password.</div>";
+                        }
+                    }
+                }
+                else
+                {
+                    $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Valid Email Address.</div>";
+                }
+            }
+            catch(PDOException $e) {
+                echo '{"error":{"text":'. $e->getMessage() .'}}';
+            }
+        }
+        else
+        {
+            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Password.</div>";
+        }
+    }
+    else
+    {
+        $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Email Address.</div>";
+    }
+}
+
 ?>
 
 
@@ -264,11 +325,13 @@ if(isset($_POST['signup_employer'])) {
 
 			            </div>
 			          </div>
-			          <div class="col-lg-6 tab-wrap">
+			          <div class="col-lg-12 tab-wrap">
 
 			            <div class="tab-content" id="v-pills-tabContent">
 
 			              <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
+                      <div class="row">
+                        <div class="col-lg-6">
                                 <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
 
                                 <div class="row form-group">
@@ -280,7 +343,7 @@ if(isset($_POST['signup_employer'])) {
                                 <div class="row form-group">
                                   <div class="col-md-12 mb-3 mb-md-0">
                                     <label class="text-black" for="fname">Password</label>
-                                    <input type="password" id="fname" name="pass" class="form-control" placeholder="Password">
+                                    <input type="password" id="fname" name="pass" minlength="6" class="form-control" placeholder="Password">
                                   </div>
                                 </div>
                                 <div class="row form-group mb-4">
@@ -296,10 +359,36 @@ if(isset($_POST['signup_employer'])) {
                                   </div>
                                 </div>
 
-                                </form>
+                              </form></div>
+                                <div class="col-lg-6">
+                                <h2 class="mb-4">Log In As Jobseeker</h2>
+                                <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
+
+                                  <div class="row form-group">
+                                    <div class="col-md-12 mb-3 mb-md-0">
+                                      <label class="text-black" for="fname">Email</label>
+                                      <input type="text" id="fname" name="email" class="form-control" placeholder="Email address">
+                                    </div>
+                                  </div>
+                                  <div class="row form-group mb-4">
+                                    <div class="col-md-12 mb-3 mb-md-0">
+                                      <label class="text-black" for="fname">Password</label>
+                                      <input type="password" id="fname" name="pass" class="form-control" placeholder="Password">
+                                    </div>
+                                  </div>
+
+                                  <div class="row form-group">
+                                    <div class="col-md-12">
+                                      <input type="submit" value="Log In" name="login" class="btn px-4 btn-primary text-white">
+                                    </div>
+                                  </div>
+
+                                </form></div></div>
 			              </div>
 
 			              <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-performance-tab">
+                      <div class="row">
+                        <div class="col-lg-6">
                               <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
 
                             <div class="row form-group">
@@ -311,7 +400,7 @@ if(isset($_POST['signup_employer'])) {
                             <div class="row form-group">
                               <div class="col-md-12 mb-3 mb-md-0">
                                 <label class="text-black" for="fname">Password</label>
-                                <input type="password" id="fname" name="pass" class="form-control" placeholder="Password">
+                                <input type="password" id="fname" minlength="6" name="pass" class="form-control" placeholder="Password">
                               </div>
                             </div>
                             <div class="row form-group mb-4">
@@ -326,37 +415,45 @@ if(isset($_POST['signup_employer'])) {
                                 <input type="submit" value="Sign Up" name="signup_employer" class="btn px-4 btn-primary text-white">
                               </div>
                             </div>
+                          </div>
+                          <div class="col-lg-6">
+                            </form>
+                            <h2 class="mb-4">Log In As Employer </h2>
+                            <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
+
+                              <div class="row form-group">
+                                <div class="col-md-12 mb-3 mb-md-0">
+                                  <label class="text-black" for="fname">Email</label>
+                                  <input type="text" id="fname" name="email" class="form-control" placeholder="Email address">
+                                </div>
+                              </div>
+                              <div class="row form-group mb-4">
+                                <div class="col-md-12 mb-3 mb-md-0">
+                                  <label class="text-black" for="fname">Password</label>
+                                  <input type="password" id="fname" name="pass" class="form-control" placeholder="Password">
+                                </div>
+                              </div>
+
+                              <div class="row form-group">
+                                <div class="col-md-12">
+                                  <input type="submit" value="Log In" name="login" class="btn px-4 btn-primary text-white">
+                                </div>
+                              </div>
 
                             </form>
+                          </div></div>
 			              </div>
 			            </div>
 			          </div>
-                <div class="col-lg-6">
-                  <h2 class="mb-4">Log In To JobBoard</h2>
-                  <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
 
-                    <div class="row form-group">
-                      <div class="col-md-12 mb-3 mb-md-0">
-                        <label class="text-black" for="fname">Email</label>
-                        <input type="text" id="fname" name="email" class="form-control" placeholder="Email address">
-                      </div>
-                    </div>
-                    <div class="row form-group mb-4">
-                      <div class="col-md-12 mb-3 mb-md-0">
-                        <label class="text-black" for="fname">Password</label>
-                        <input type="password" id="fname" name="pass" class="form-control" placeholder="Password">
-                      </div>
-                    </div>
 
-                    <div class="row form-group">
-                      <div class="col-md-12">
-                        <input type="submit" value="Log In" name="login" class="btn px-4 btn-primary text-white">
-                      </div>
-                    </div>
 
-                  </form>
-                </div>
-			        </div>
+
+
+
+
+
+
 		        </div>
           </div>
 
