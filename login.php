@@ -137,41 +137,27 @@ if(isset($_POST['signup_employer'])) {
     }
 }
 
-if(isset($_POST['login'])) {
-    if($_POST['email'] != null && !empty($_POST['email']))
-    {
-        if($_POST['pass'] != null && !empty($_POST['pass']))
-        {
-            try{
+if(isset($_POST['login_jobseeker'])) {
+  try{
 
                 $email = $_POST['email'];
                 $pass = $_POST['pass'];
-                $stmt = $conn->prepare("select email, from users where email = ? and role = ?");
-                $stmt->bindParam(1, $emailId);
-                $stmt->bindParam(2, $userRole);
+                $stmt = $conn->prepare("select email,password,active from jobseeker where email = ? and password = ?");
+                $stmt->bindParam(1, $email);
+                $stmt->bindParam(2, $pass);
                 $stmt->execute();
                 if($stmt->rowCount() > 0)
                 {
                     $data = $stmt->fetchAll();
                     foreach($data as $row) {
-                        $dbPass = $row['pass'];
-
-                        if(password_verify($password, $dbPass))
+                        if($row['active'] == '1')
                         {
-                            session_start();
-
-                            //unset sessions
-                            unset($_SESSION['USERROLE']);
-                            unset($_SESSION['USEREMAIL']);
-
-                            $_SESSION['USERROLE'] = $userRole;
-                            $_SESSION['USEREMAIL'] = $emailId;
-
-                            header("Location: admin/dashboard");
+                            $_SESSION['email'] = $email;
+                            header("Location: index.php");
                         }
                         else
                         {
-                            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Valid Password.</div>";
+                            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Your account is inactive.Please verify your email id first.</div>";
                         }
                     }
                 }
@@ -184,17 +170,6 @@ if(isset($_POST['login'])) {
                 echo '{"error":{"text":'. $e->getMessage() .'}}';
             }
         }
-        else
-        {
-            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Password.</div>";
-        }
-    }
-    else
-    {
-        $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Email Address.</div>";
-    }
-}
-
 ?>
 
 
@@ -306,18 +281,17 @@ if(isset($_POST['login'])) {
     </section>
 
     <section class="site-section">
+      <div id="loginResult" style="padding-bottom:4%;"><?php echo $result; ?></div>
       <div class="container">
-<div id="loginResult"><?php echo $result; ?></div>
+
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-xl-12 ftcon-animate wow fadeInUp mb-6 pb-6" data-scrollax=" properties: { translateY: '70%' }" style="animation-duration: 1.5s;margin-top:-10%;">
-          	<p class="mb-4 mt-5 pt-5" style="display:none;" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">We have <span class="number" data-number="850000">0</span> great job offers you deserve!</p>
-            <h1 class="mb-5" style="opacity: 0.827778;font-weight: 800;transform: translateZ(0px) translateY(-3.22917%);display:none;">Your Dream <br><span>Job is Waiting</span></h1>
 
 						<div class="ftcon-search" style = "padding-top:10vh">
 							<div class="row" style="margin-right:0;margin-left:0; ">
 
 		            <div class="col-md-12 nav-link-wrap">
-                <h2 class="mb-4">Sign Up</h2>
+                <h2 class="mb-4" style="color:#000 !important;font-weight: 400px;font-size:30px;">Sign Up</h2>
 			            <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 			              <a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">Jobseeker</a>
 
@@ -361,7 +335,7 @@ if(isset($_POST['login'])) {
 
                               </form></div>
                                 <div class="col-lg-6">
-                                <h2 class="mb-4">Log In As Jobseeker</h2>
+                                <h2 class="mb-4" style="color:#000 !important;font-weight: 400px;font-size:30px;">Log In As Jobseeker</h2>
                                 <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
 
                                   <div class="row form-group">
@@ -379,7 +353,7 @@ if(isset($_POST['login'])) {
 
                                   <div class="row form-group">
                                     <div class="col-md-12">
-                                      <input type="submit" value="Log In" name="login" class="btn px-4 btn-primary text-white">
+                                      <input type="submit" value="Log In" name="login_jobseeker" class="btn px-4 btn-primary text-white">
                                     </div>
                                   </div>
 
@@ -418,7 +392,7 @@ if(isset($_POST['login'])) {
                           </div>
                           <div class="col-lg-6">
                             </form>
-                            <h2 class="mb-4">Log In As Employer </h2>
+                            <h2 class="mb-4" style="color:#000 !important;font-weight: 400px;font-size:30px;">Log In As Employer </h2>
                             <form action="<?=($_SERVER['PHP_SELF'])?>"  method="post" autocomplete="off" class="p-4 border rounded">
 
                               <div class="row form-group">
@@ -436,7 +410,7 @@ if(isset($_POST['login'])) {
 
                               <div class="row form-group">
                                 <div class="col-md-12">
-                                  <input type="submit" value="Log In" name="login" class="btn px-4 btn-primary text-white">
+                                  <input type="submit" value="Log In" name="login_emp" class="btn px-4 btn-primary text-white">
                                 </div>
                               </div>
 
@@ -446,80 +420,13 @@ if(isset($_POST['login'])) {
 			            </div>
 			          </div>
 
-
-
-
-
-
-
-
-
 		        </div>
           </div>
-
-
-
-
-
         </div>
       </div>
     </section>
 
-    <footer class="site-footer">
-
-      <a href="#top" class="smoothscroll scroll-top">
-        <span class="icon-keyboard_arrow_up"></span>
-      </a>
-
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Search Trending</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Graphic Design</a></li>
-              <li><a href="#">Web Developers</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Company</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Blog</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Support</h3>
-            <ul class="list-unstyled">
-              <li><a href="#">Support</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md-3 mb-4 mb-md-0">
-            <h3>Contact Us</h3>
-            <div class="footer-social">
-              <a href="https://www.facebook.com/wirmonindia/" target = "_blank"><span class="icon-facebook"></span></a>
-              <a href="https://twitter.com/Wirmonindia" target = "_blank"><span class="icon-twitter"></span></a>
-              <a href="https://www.instagram.com/wirmon.in/" target = "_blank"><span class="icon-instagram"></span></a>
-              <a href="https://www.linkedin.com/company/wirmonindia/" target = "_blank"><span class="icon-linkedin"></span></a>
-              <a href="https://in.pinterest.com/indiawirmon/" target = "_blank"><span class="icon-pinterest"></span></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row text-center">
-          <div class="col-12">
-            <p class="copyright"><small>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="index.php" target="_blank" >Wirmon Pvt Ltd</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
+    <?php include_once 'footer.php'; ?>
   </div>
 
     <!-- SCRIPTS -->

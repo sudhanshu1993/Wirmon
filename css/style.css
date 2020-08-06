@@ -3732,7 +3732,7 @@ input[type="button"].btn-block {
         flex-direction: column;
         margin-right: 15px;
         margin-bottom: 0;
-        margin-left: 15px; } 
+        margin-left: 15px; }
       }
       @media (max-width: 576px) {
       .card{
@@ -9276,14 +9276,14 @@ h1, h2, h3, h4 {
   color: #000; }
 
 .site-section {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
   position: relative;
   z-index: 2; }
   @media (max-width: 991.98px) {
     .site-section {
-      padding-top: 3rem;
-      padding-bottom: 3rem; } }
+      padding-top: 3%;
+      padding-bottom: 3%; } }
 
 .text-black {
   color: #000 !important; }
