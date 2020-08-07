@@ -5,7 +5,7 @@
     <title>Wirmon &mdash; Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+   
 
     <link rel="stylesheet" href="css/custom-bs.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -19,6 +19,18 @@
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servi.css">
+    <style>
+
+div a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  padding: 15px;
+  display:inline-block;
+}
+
+</style>
   </head>
   <body id="top">
 
@@ -116,45 +128,82 @@
           </div>
         </div></div>
     </section>
-
-
-    <section class="site-section services-section bg-light block__62849" id="next-section" style="padding-top:unset;">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-
-            <a href="it-services.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-laptop d-block"></span></span>
-              <h3>IT Services</h3>
-              <p>Wirmon is your trusted source in IT services and support.We work towards customer success by delivering error free softwares with best quality & on-time deliveries.</p>
-            </a>
-
-          </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-
-            <a href="hr-services.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-search d-block"></span></span>
-              <h3>HR Services</h3>
-              <p> Our HR Professionals have the expertise and experience to address the full spectrum of HR issues and requirements to help meet your immediate needs.</p>
-            </a>
-
-          </div>
-          <div class="col-6 col-md-6 col-lg-4 mb-4 mb-lg-5">
-
-            <a href="digital_marketing.php" class="block__16443 text-center d-block">
-              <span class="custom-icon mx-auto"><span class="icon-paper-plane d-block"></span></span>
-              <h3>Digital Marketing</h3>
-              <p>Wirmon help business owners and marketing executives use technology and the Internet to measurably improve their marketing performance and ROI</p>
-            </a>
-
-          </div>
-
+  <section>
+    <div class="container const">
+      
+    <div class="card">
+    <a href ="#" style="padding : 0 ;font-size:16px;">
+       
+      <div class="face face1">
+        <div class="content">
+          <img src="design.png">
+          <h3>IT Services</h3>
         </div>
+      </div>
+      </a>
+      <div class="face face2">
+      <div class="content">
+      <ol>
+            <li>Website Development</li>
+            <li>Mobile App Development</li>
+            <li>System Software</li>
 
+          </ol>
+        </div>
+      </div>
 
       </div>
-    </section>
+    
+      <div class="card">
+      <a href ="#" style="padding : 0;font-size:16px;">
+      <div class="face face1">
+        <div class="content">
+          <img src="design.png">
+          <h3>Digital Marketing</h3>
+         
+        </div>
+      </div>
+      </a>
+      <div class="face face2">
+      <div class="content">
+          <ol>
+            <li>Search Engine Marketing</li>
+            <li>Social Media Marketing</li>
+            <li>Search Engine Optimizations</li>
+            <li>Pay Per Click</li>
+            <li>Content Marketing</li>
+            <li>Google Analytics</li>
+          </ol>
+        </div>
+      </div>
+   
+      </div>
+      <div class="card">
+      <a href ="#" style="padding : 0;font-size:16px;">
+      <div class="face face1">
+        <div class="content">
+          <img src="design.png">
+          <h3>HR Services</h3>
+        </div>
+      </div>
+      </a>
+      <div class="face face2">
+      <div class="content">
+      <ol>
+            <li>Staffing Services</li>
+            <li>Onboarding</li>
+            <li>Talent Acquisition</li>
+            <li>Training & Development</li>
+
+          </ol>   
+    </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
+
+    
 
   <?php include_once 'footer.php'; ?>
 

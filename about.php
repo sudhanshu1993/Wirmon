@@ -249,7 +249,7 @@
     <img class="card-img-top" src="images/Sneha.jpg" alt="Card image" style="width:100%">
     <div class="card-body">
       <h4 class="card-title"><b>Sneha Gobinathan</b></h4>
-      <p class="card-text card-subtitle" >Digital Marketing Manager</p>
+      <p class="card-text card-subtitle" >Marketing Manager</p>
       <a href="https://in.linkedin.com/in/sneha-gobinathan-267b391a9?trk=people-guest_people_search-card" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
     </div>
   </div>
