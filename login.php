@@ -206,7 +206,7 @@ if(isset($_POST['login_jobseeker'])) {
                         }
                         else
                         {
-                            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Valid Email Address.</div>";
+                            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Please Enter Valid Email Address/Password.</div>";
                         }
                     }
                     catch(PDOException $e) {
