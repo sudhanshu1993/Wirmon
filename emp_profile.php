@@ -159,104 +159,76 @@
       <div class="row mb-4" style="margin-left:unset;margin-right:unset;">
         <div class="col-lg-12">
           <form class="p-4 p-md-5 border rounded" method="post">
-            <h3 class="text-black mb-5 border-bottom pb-2">Job Details</h3>
+            <h3 class="text-black mb-5 border-bottom pb-2">User Details</h3>
 
             <div class="form-group">
-              <label for="company-website-tw d-block">Upload Featured Image</label> <br>
-              <label class="btn btn-primary btn-md btn-file">
-                Browse File<input type="file" hidden>
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
+              <label for="name">Name</label>
               <input type="text" class="form-control" id="email" placeholder="you@yourdomain.com">
             </div>
             <div class="form-group">
-              <label for="job-title">Job Title</label>
-              <input type="text" class="form-control" id="job-title" placeholder="Product Designer">
+              <label for="email">Email</label>
+              <input type="text" value="<?php echo $_SESSION['email'];?>" class="form-control" id="email" placeholder="you@yourdomain.com">
+            </div>
+            <div class="form-group">
+              <label for="job-title">Contact No</label>
+              <input type="text" pattern="[0-9]{10}" class="form-control" id="job-title" placeholder="Product Designer">
             </div>
             <div class="form-group">
               <label for="job-location">Location</label>
               <input type="text" class="form-control" id="job-location" placeholder="e.g. New York">
             </div>
 
-            <div class="form-group">
-              <label for="job-region">Job Region</label>
-              <select class="selectpicker border rounded" id="job-region" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Region" >
-                    <option>Anywhere</option>
-                    <option>San Francisco</option>
-                    <option>Palo Alto</option>
-                    <option>New York</option>
-                    <option>Manhattan</option>
-                    <option>Ontario</option>
-                    <option>Toronto</option>
-                    <option>Kansas</option>
-                    <option>Mountain View</option>
-                  </select>
-            </div>
-
-            <div class="form-group">
-              <label for="job-type">Job Type</label>
-              <select class="selectpicker border rounded" id="job-type" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Job Type">
-                <option>Part Time</option>
-                <option>Full Time</option>
-              </select>
-            </div>
-
-
-            <div class="form-group">
-              <label for="job-description">Job Description</label>
-              <div class="editor" id="editor-1">
-                <p>Write Job Description!</p>
-              </div>
-            </div>
-
-
-            <h3 class="text-black my-5 border-bottom pb-2">Company Details</h3>
+          <h3 class="text-black my-5 border-bottom pb-2">Company Details</h3>
             <div class="form-group">
               <label for="company-name">Company Name</label>
               <input type="text" class="form-control" id="company-name" placeholder="e.g. New York">
             </div>
-
             <div class="form-group">
-              <label for="company-tagline">Tagline (Optional)</label>
-              <input type="text" class="form-control" id="company-tagline" placeholder="e.g. New York">
+              <label for="email">Company Email</label>
+              <input type="text" class="form-control" id="email" placeholder="you@yourdomain.com">
             </div>
-
+              <div class="form-group">
+            <label for="company-name">Organization Category</label>
+            <select class="selectpicker border rounded" id="job-region" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Category" >
+                  <option>Compony</option>
+                  <option>NGO</option>
+                  <option>Partnership</option>
+                  <option>Others</option>
+                    </select>
+          </div>
+          <div class="form-group">
+            <label for="job-location">Location</label>
+            <input type="text" class="form-control" id="job-location" placeholder="e.g. New York">
+          </div>
             <div class="form-group">
-              <label for="job-description">Company Description (Optional)</label>
+              <label for="job-description">Company Description</label>
               <div class="editor" id="editor-2">
                 <p>Description</p>
               </div>
             </div>
 
             <div class="form-group">
-              <label for="company-website">Website (Optional)</label>
+              <label for="company-website">Website URL</label>
               <input type="text" class="form-control" id="company-website" placeholder="https://">
             </div>
-
             <div class="form-group">
-              <label for="company-website-fb">Facebook Username (Optional)</label>
-              <input type="text" class="form-control" id="company-website-fb" placeholder="companyname">
-            </div>
-
-            <div class="form-group">
-              <label for="company-website-tw">Twitter Username (Optional)</label>
-              <input type="text" class="form-control" id="company-website-tw" placeholder="@companyname">
-            </div>
-            <div class="form-group">
-              <label for="company-website-tw">Linkedin Username (Optional)</label>
-              <input type="text" class="form-control" id="company-website-tw" placeholder="companyname">
-            </div>
-
-            <div class="form-group">
-              <label for="company-website-tw d-block">Upload Logo</label> <br>
-              <label class="btn btn-primary btn-md btn-file">
-                Browse File<input type="file" hidden>
+                <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
+              Upload  Company registration/ Individual aadhar<input type="file" hidden>
               </label>
             </div>
-
+            <div class="form-group">
+            <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
+              Upload PAN/ GST<input type="file" hidden>
+              </label>
+            </div>
+            <div class="form-group">
+              <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
+              Upload Logo/ Individual photo<input type="file" hidden>
+              </label>
+            </div><hr>
+              <div class="form-group">
+<center><input type="submit" class="btn btn-primary btn-md text-white" value="Update" style="border: 1px solid #157efb;background-color:#157efb;font-size: 20px;">
+</div>
           </form>
         </div>
 </div>
