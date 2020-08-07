@@ -1,0 +1,46 @@
+.LeftNavSideBar {
+    border-right: 2px solid #d0d0d0;
+      padding: 0;
+    background-image: none!important;
+    border-radius: 0!important;
+    border-left: 0!important;
+    border-bottom: 0!important;
+}
+@media (max-width: 767px){
+.LeftNavSideBar .navbar-brand, .LeftNavSideBar .navbar-header {
+    display: block;
+}
+}
+@media only screen and (max-device-width: 521px) and (min-device-width: 320px){
+.LeftNavSideBar .navbar-brand, .LeftNavSideBar .navbar-header {
+    display: block !important;
+}
+.collapse{visibility: visible !important;}
+}
+.LeftNavSideBar .navbar-brand, .LeftNavSideBar .navbar-header {
+    display: none;
+}
+@media (max-width: 768px)
+.LeftNavSideBar .navbar-toggle {
+    float: left;
+    margin-left: 5px;
+}
+.content-container button{
+  min-width: 1em!important;
+    border: 1px solid #245580;
+    font-family: inherit!important;
+    color: inherit;
+    margin-bottom: 0;
+    font-size: 14px!important;
+    vertical-align: middle;
+}
+.sidebar-nav li {
+    border-bottom: 1px solid #e1e1e1;
+}
+.nav>li>a {
+    padding: 10px 11px;
+}
+.sidebar-nav li.active {
+    background-color: #a7e7ff!important;
+    color: #262626;
+}

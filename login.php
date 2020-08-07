@@ -159,9 +159,9 @@ if(isset($_POST['login_jobseeker'])) {
                     $data = $stmt->fetchAll();
                     foreach($data as $row) {
                         if($row['active'] == '1')
-                        {
-                            $_SESSION['email'] = $email;
-                            header("Location: index.php");
+                        {session_start();
+                            $_SESSION['email'] = $_POST['email'];
+                            header("Location: js_dashboard.php");
                         }
                         else
                         {
@@ -194,8 +194,9 @@ if(isset($_POST['login_jobseeker'])) {
                             foreach($data as $row) {
                                 if($row['active'] == '1')
                                 {
-                                    $_SESSION['email'] = $email;
-                                    header("Location: index.php");
+                                  session_start();
+                                      $_SESSION['email'] = $_POST['email'];
+                                      header("Location: emp_dashboard.php");
                                 }
                                 else
                                 {
