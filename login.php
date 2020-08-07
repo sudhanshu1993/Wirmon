@@ -106,21 +106,25 @@ if(isset($_POST['signup_employer'])) {
               $email = $_POST['email'];
               $pass = $_POST['pass'];
               $id = uniqid("em");
+              $qry = $conn->prepare("select email from employer where email = ?");
+              $qry->bindParam(1, $email);
+              $qry->execute();
+              $no=$qry->rowCount();
+              if($no == 0){
               $mailSendToUserJobSeeker = $utils->userMailToEmployer($mail, $email,$id);
               if($mailSendToUserJobSeeker)
               {
-
               $stmt = $conn->prepare('insert into employer (unique_id,email,password) VALUES(?,?,?)');
               $stmt->bindParam(1, $id);
               $stmt->bindParam(2, $email);
               $stmt->bindParam(3, $pass);
-
-
               $stmt->execute();
-
               $result = "<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Success!</strong> Signup Successfull.Login to continue</div>";
-
             }
+          }
+          else{
+            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong>Email Id already registered!Try Logging in</div>";
+                }
           }
             catch (PDOException $e) {
                  echo '{"error":{"text":' . $e->getMessage() . '}}';
