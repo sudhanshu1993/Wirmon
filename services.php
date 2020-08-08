@@ -132,11 +132,11 @@ div a {
     <div class="container const">
       
     <div class="card">
-    <a href ="#" style="padding : 0 ;font-size:16px;">
+    <a href ="service-single.php" style="padding : 0 ;font-size:16px;">
        
       <div class="face face1">
         <div class="content">
-          <img src="design.png">
+          <img src="images/its.png">
           <h3>IT Services</h3>
         </div>
       </div>
@@ -155,10 +155,10 @@ div a {
       </div>
     
       <div class="card">
-      <a href ="#" style="padding : 0;font-size:16px;">
+      <a href ="service-single.php" style="padding : 0;font-size:16px;">
       <div class="face face1">
         <div class="content">
-          <img src="design.png">
+          <img src="images/dmse.png">
           <h3>Digital Marketing</h3>
          
         </div>
@@ -179,10 +179,10 @@ div a {
    
       </div>
       <div class="card">
-      <a href ="#" style="padding : 0;font-size:16px;">
+      <a href ="service-single.php" style="padding : 0;font-size:16px;">
       <div class="face face1">
         <div class="content">
-          <img src="design.png">
+          <img src="images/hrs.png">
           <h3>HR Services</h3>
         </div>
       </div>
