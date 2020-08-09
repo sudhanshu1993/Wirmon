@@ -79,3 +79,11 @@
         transition: 0.5s;
     }
 }
+@media (max-width: 750px){
+    .container .card .face{
+        width: 200px;
+        height: 200px;
+        transition: 0.5s;
+        font-size: 14px;
+    }
+}

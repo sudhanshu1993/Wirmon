@@ -167,9 +167,9 @@ div a {
       <div class="face face2">
       <div class="content">
           <ol>
-            <li>Search Engine Marketing</li>
+            <li>SE Marketing</li>
             <li>Social Media Marketing</li>
-            <li>Search Engine Optimizations</li>
+            <li>SEO</li>
             <li>Pay Per Click</li>
             <li>Content Marketing</li>
             <li>Google Analytics</li>

@@ -145,12 +145,55 @@
             </nav>
         </div>
     </div>
-    <div class="col-md-10">
+             
 
+<div class="col-md-6">
+<div class="panel-heading" style="background:#78d5ef">
+        Recent Job Posted
     </div>
+                  <div>
+                  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>JOB ID</th>
+        <th>JOB Title</th>
+        <th>Created On</th>
+        <th>Expiring On</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+            </div>
+                </div>
 </div>
 </div>
 </div>
+
 
     </section>
 
