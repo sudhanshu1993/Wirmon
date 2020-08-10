@@ -61,6 +61,11 @@ if(isset($_POST['signup_jobseeker'])) {
               $qry->execute();
               $no=$qry->rowCount();
               if($no == 0){
+                $qry1 = $conn->prepare("select email from employer where email = ?");
+                $qry1->bindParam(1, $email);
+                $qry1->execute();
+                $num=$qry1->rowCount();
+                if($num == 0){
               $mailSendToUserJobSeeker = $utils->userMailToJobSeeker($mail, $email,$id);
               if($mailSendToUserJobSeeker)
               {
@@ -72,6 +77,10 @@ if(isset($_POST['signup_jobseeker'])) {
               $result = "<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Success!</strong> Signup Successfull.Login to continue</div>";
             }
           }
+          else{
+            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong>Email Id already registered!Try Logging in</div>";
+                }
+        }
           else{
             $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong>Email Id already registered!Try Logging in</div>";
                 }
@@ -111,6 +120,11 @@ if(isset($_POST['signup_employer'])) {
               $qry->execute();
               $no=$qry->rowCount();
               if($no == 0){
+                $qry1 = $conn->prepare("select email from jobseeker where email = ?");
+                $qry1->bindParam(1, $email);
+                $qry1->execute();
+                $num=$qry1->rowCount();
+                if($num == 0){
               $mailSendToUserJobSeeker = $utils->userMailToEmployer($mail, $email,$id);
               if($mailSendToUserJobSeeker)
               {
@@ -121,6 +135,10 @@ if(isset($_POST['signup_employer'])) {
               $stmt->execute();
               $result = "<div class='alert alert-success alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Success!</strong> Signup Successfull.Login to continue</div>";
             }
+          }
+          else{
+            $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong>Email Id already registered!Try Logging in</div>";
+                }
           }
           else{
             $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong>Email Id already registered!Try Logging in</div>";
