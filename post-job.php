@@ -182,7 +182,7 @@
               <div class="form-group">
                 <label for="job-description">Job Description</label>
                 <div class="editor" id="editor-1">
-                  <p>Write Job Description!</p>
+                  <input type="text" value="">
                 </div>
               </div>
 
@@ -201,7 +201,7 @@
               <div class="form-group">
                 <label for="job-description">Company Description (Optional)</label>
                 <div class="editor" id="editor-2">
-                  <p>Description</p>
+                  <p id="edit">Description</p>
                 </div>
               </div>
 

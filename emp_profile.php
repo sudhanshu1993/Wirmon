@@ -1,7 +1,37 @@
 <?php
+include "dbconn.php";
  session_start();
  if (($_SESSION['email'] == '') || (!isset($_SESSION['email']))) {
       header("Location: login.php");
+}
+$email=$_SESSION['email'];
+$qry = $conn->prepare("select * from employer where email = ?");
+$qry->bindParam(1, $email);
+$qry->execute();
+if($qry->rowCount() > 0)
+{
+    $data = $qry->fetchAll();
+    foreach($data as $row) {
+      $name=$row['name'];
+      $contact=$row['contact_no'];
+      $location=$row['location'];
+      $company_name=$row['company_name'];
+      $comp_email=$row['company_email'];
+      $category=$row['category'];
+      $comp_desc=$row['comp_desc'];
+      $url=$row['website_url'];
+      $regis_aadhar=$row['regis/aadhar'];
+      $pan_gst=$row['pan/gst'];
+      $logo_photo=$row['logo/photo'];
+    }
+  }
+  if(isset($_POST['submit'])) {
+
+$discussionContent = $_POST['discussionContent'];
+  $stmt1 = $conn->prepare("update employer set comp_desc='$discussionContent' where email=?");
+  $stmt1->bindParam(1, $email);
+    $stmt1->execute();
+  echo '<script>alert("success")</script>';
 }
 ?>
 <!doctype html>
@@ -127,7 +157,7 @@
                     <li >
                         <a href="emp_dashboard.php">Employer Home</a></li>
                     <li class="active">
-                        <a href="">View/Update NCS Profile</a>
+                        <a href="">View/Update Profile</a>
                     </li>
                     <li class="enabled">
                         <a href="emp_postjob.php">Post New Job</a>
@@ -158,35 +188,35 @@
       </div>
       <div class="row mb-4" style="margin-left:unset;margin-right:unset;">
         <div class="col-lg-12">
-          <form class="p-4 p-md-5 border rounded" method="post">
+          <form class="p-4 p-md-5 border rounded" method="post" role="form" action="#">
             <h3 class="text-black mb-5 border-bottom pb-2">User Details</h3>
 
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="email" placeholder="you@yourdomain.com">
+              <input type="text" name="name" value="<?php echo $name;?>" class="form-control" id="email" placeholder="you@yourdomain.com">
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="text" value="<?php echo $_SESSION['email'];?>" class="form-control" id="email" placeholder="you@yourdomain.com">
+              <input type="text" name="email" value="<?php echo $_SESSION['email'];?>" class="form-control" id="email" placeholder="you@yourdomain.com">
             </div>
             <div class="form-group">
               <label for="job-title">Contact No</label>
-              <input type="text" pattern="[0-9]{10}" class="form-control" id="job-title" placeholder="Product Designer">
+              <input type="text" name="contact" value="<?php echo $contact;?>" pattern="[0-9]{10}" class="form-control" id="job-title" placeholder="Product Designer">
             </div>
-          
+
 
           <h3 class="text-black my-5 border-bottom pb-2">Company Details</h3>
             <div class="form-group">
               <label for="company-name">Company Name</label>
-              <input type="text" class="form-control" id="company-name" placeholder="e.g. New York">
+              <input name="company_name" type="text" value="<?php echo $company_name;?>" class="form-control" id="company-name" placeholder="e.g. New York">
             </div>
             <div class="form-group">
               <label for="email">Company Email</label>
-              <input type="text" class="form-control" id="email" placeholder="you@yourdomain.com">
+              <input type="text" name="company_email" value="<?php echo $comp_email;?>" class="form-control" id="email" placeholder="you@yourdomain.com">
             </div>
               <div class="form-group">
             <label for="company-name">Organization Category</label>
-            <select class="selectpicker border rounded" id="job-region" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Category" >
+            <select class="selectpicker border rounded" name="category" value="<?php echo $category;?>" id="job-region" data-style="btn-black" data-width="100%" data-live-search="true" title="Select Category" >
                   <option>Compony</option>
                   <option>NGO</option>
                   <option>Partnership</option>
@@ -195,36 +225,37 @@
           </div>
           <div class="form-group">
             <label for="job-location">Location</label>
-            <input type="text" class="form-control" id="job-location" placeholder="e.g. New York">
+            <input type="text" name="location" value="<?php echo $location;?>" class="form-control" id="job-location" placeholder="e.g. New York">
           </div>
             <div class="form-group">
               <label for="job-description">Company Description</label>
-              <div class="editor" id="editor-2">
-                <p>Description</p>
+               <input name="discussionContent" type="hidden" value="<?php echo $comp_desc;?>">
+              <div id="editor-2" style="height: 375px;">
+<?php echo $comp_desc;?>
               </div>
             </div>
 
             <div class="form-group">
               <label for="company-website">Website URL</label>
-              <input type="text" class="form-control" id="company-website" placeholder="https://">
+              <input type="text" value="<?php echo $url;?>" class="form-control" id="company-website" placeholder="https://">
             </div>
             <div class="form-group">
                 <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload  Company registration/ Individual aadhar<input type="file" hidden>
+              Upload  Company registration/ Individual aadhar<input type="file" value="<?php echo $regis_aadhar;?>" hidden>
               </label>
             </div>
             <div class="form-group">
             <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload PAN/ GST<input type="file" hidden>
+              Upload PAN/ GST<input type="file" value="<?php echo $pan_gst;?>" hidden>
               </label>
             </div>
             <div class="form-group">
               <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload Logo/ Individual photo<input type="file" hidden>
+              Upload Logo/ Individual photo<input type="file" value="<?php echo $logo_photo;?>" hidden>
               </label>
             </div><hr>
               <div class="form-group">
-<center><input type="submit" class="btn btn-primary btn-md text-white" value="Update" style="border: 1px solid #157efb;background-color:#157efb;font-size: 20px;">
+<center><input type="submit" name="submit" class="btn btn-primary btn-md text-white" value="Update" style="border: 1px solid #157efb;background-color:#157efb;font-size: 20px;">
 </div>
           </form>
         </div>
@@ -256,8 +287,48 @@
     <script src="js/bootstrap-select.min.js"></script>
 
     <script src="js/custom.js"></script>
+ <script src="discussionsEditor.js"></script>
+    <script>
 
+    var quill = new Quill('#editor-2', {
+                   modules: {
+                   toolbar: [
+                    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                   ['bold', 'italic', 'underline', 'strike'],
+                   ['link', 'blockquote', 'code-block', 'image'],
+                    [{ 'script': 'sub'}, { 'script': 'super' }],
+                   [{ list: 'ordered' }, { list: 'bullet' }],
+                    ['clean']
+                   ]
+                   },
+                   placeholder: 'Compose an epic...',
+                   theme: 'snow'
+                   });
+                   var form = document.querySelector('form');
+                   form.onsubmit = function() {
+                     // Populate hidden form on submit
+                       var discussionContent = document.querySelector('input[name=discussionContent]');
+                       discussionContent.value = JSON.stringify(quill.getContents());
 
+                       var url ="#";
+                       var data = stringify(quill.getContents());
+                       alert( "the data is " + data);
+                           $.ajax({
+                           type: "POST",
+                           url : url,
+                           data : discussionContent,
 
+                           success: function ()
+                           {
+                               alert("Successfully sent to database");
+                           },
+                           error: function()
+                           {
+                           alert("Could not send to database");
+                           }
+                       });
+                       return false;
+                   };
+               </script>
   </body>
 </html>
