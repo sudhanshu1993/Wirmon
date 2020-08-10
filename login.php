@@ -179,8 +179,24 @@ if(isset($_POST['login_jobseeker'])) {
                         if($row['active'] == '1')
                         {session_start();
                             $_SESSION['email'] = $_POST['email'];
-                            header("Location: js_dashboard.php");
-                        }
+                            $qry = $conn->prepare("select name from jobseeker where email = ?");
+                            $qry->bindParam(1, $email);
+                            $qry->execute();
+                            if($qry->rowCount() > 0)
+                            {
+                                $data1 = $qry->fetchAll();
+                                foreach($data1 as $row1) {
+                                    $name = $row1['name'];
+                                    if (is_null($name))
+                                    {echo '<script>alert("null")</script>';
+                                header("Location: js_profile.php");
+                                    }
+                                    else{echo '<script>alert("not null")</script>';
+                                      header("Location: js_dashboard.php");
+                                    }
+                                  }
+                                }
+                              }
                         else
                         {
                             $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Your account is inactive.Please verify your email id first.</div>";
@@ -213,9 +229,25 @@ if(isset($_POST['login_jobseeker'])) {
                                 if($row['active'] == '1')
                                 {
                                   session_start();
-                                      $_SESSION['email'] = $_POST['email'];
-                                      header("Location: emp_dashboard.php");
-                                }
+                                  $_SESSION['email'] = $_POST['email'];
+                                  $qry = $conn->prepare("select name from employer where email = ?");
+                                  $qry->bindParam(1, $email);
+                                  $qry->execute();
+                                  if($qry->rowCount() > 0)
+                                  {
+                                      $data1 = $qry->fetchAll();
+                                      foreach($data1 as $row1) {
+                                          $name = $row1['name'];
+                                          if (is_null($name))
+                                          {echo '<script>alert("null")</script>';
+                                      header("Location: emp_profile.php");
+                                          }
+                                          else{echo '<script>alert("not null")</script>';
+                                            header("Location: emp_dashboard.php");
+                                          }
+                                        }
+                                      }
+                                    }
                                 else
                                 {
                                     $result = "<div class='alert alert-danger alert-dismissable'><a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a> <strong>Alert!</strong> Your account is inactive.Please verify your email id first.</div>";

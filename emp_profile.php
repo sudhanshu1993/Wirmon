@@ -173,10 +173,7 @@
               <label for="job-title">Contact No</label>
               <input type="text" pattern="[0-9]{10}" class="form-control" id="job-title" placeholder="Product Designer">
             </div>
-            <div class="form-group">
-              <label for="job-location">Location</label>
-              <input type="text" class="form-control" id="job-location" placeholder="e.g. New York">
-            </div>
+          
 
           <h3 class="text-black my-5 border-bottom pb-2">Company Details</h3>
             <div class="form-group">
