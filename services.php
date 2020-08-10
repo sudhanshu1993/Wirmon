@@ -5,7 +5,7 @@
     <title>Wirmon &mdash; Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
+
 
     <link rel="stylesheet" href="css/custom-bs.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -130,10 +130,10 @@ div a {
     </section>
   <section>
     <div class="container const">
-      
+
     <div class="card">
-    <a href ="service-single.php" style="padding : 0 ;font-size:16px;">
-       
+    <a href ="it-services.php" style="padding : 0 ;font-size:16px;">
+
       <div class="face face1">
         <div class="content">
           <img src="images/its.png">
@@ -153,14 +153,14 @@ div a {
       </div>
 
       </div>
-    
+
       <div class="card">
-      <a href ="service-single.php" style="padding : 0;font-size:16px;">
+      <a href ="digital_marketing.php" style="padding : 0;font-size:16px;">
       <div class="face face1">
         <div class="content">
           <img src="images/dmse.png">
           <h3>Digital Marketing</h3>
-         
+
         </div>
       </div>
       </a>
@@ -176,10 +176,10 @@ div a {
           </ol>
         </div>
       </div>
-   
+
       </div>
       <div class="card">
-      <a href ="service-single.php" style="padding : 0;font-size:16px;">
+      <a href ="hr-services.php" style="padding : 0;font-size:16px;">
       <div class="face face1">
         <div class="content">
           <img src="images/hrs.png">
@@ -195,7 +195,7 @@ div a {
             <li>Talent Acquisition</li>
             <li>Training & Development</li>
 
-          </ol>   
+          </ol>
     </div>
       </div>
 
@@ -203,7 +203,7 @@ div a {
     </div>
   </section>
 
-    
+
 
   <?php include_once 'footer.php'; ?>
 
