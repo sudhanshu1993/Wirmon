@@ -113,6 +113,9 @@
           <div class="col-lg-3 mr-auto">
             <div class="border p-4 rounded">
               <ul class="list-unstyled block__47528 mb-0">
+              <li><a href="it-services.php">IT Services</a></li>
+                <li><a href="digital_marketing.php">Digital Marketing</a></li>
+                <li><a href="hr-services.php">HR Services</a></li>
                 <li><span class="active">Certification & Training</span>
                 <ul>
                 <li><a href="#">Selenium</a></li>

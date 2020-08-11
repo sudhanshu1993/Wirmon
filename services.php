@@ -144,9 +144,13 @@ div a {
       <div class="face face2">
       <div class="content">
       <ol>
-            <li>Website Development</li>
-            <li>Mobile App Development</li>
-            <li>System Software</li>
+                <li>Android Apps</li>
+                <li>Wordpress Dev</li>
+                <li>Drupal Dev</li>
+                <li>E-commerce</li>
+                <li>Saas Development</li>
+                <li>Quality Assurance</li>
+                <li>Bespoke Web Apps</li>
 
           </ol>
         </div>
@@ -167,12 +171,12 @@ div a {
       <div class="face face2">
       <div class="content">
           <ol>
-            <li>SE Marketing</li>
-            <li>Social Media Marketing</li>
-            <li>SEO</li>
-            <li>Pay Per Click</li>
+          <li>Social Media Marketing</li>
+                  <li>SEO</li>
+                <li>Social Media Optimization</li>
+              <li>Pay Per Click (PPC)</li>
             <li>Content Marketing</li>
-            <li>Google Analytics</li>
+          <li>Google Analytics</li></ul></li>
           </ol>
         </div>
       </div>
@@ -190,10 +194,13 @@ div a {
       <div class="face face2">
       <div class="content">
       <ol>
-            <li>Staffing Services</li>
-            <li>Onboarding</li>
-            <li>Talent Acquisition</li>
-            <li>Training & Development</li>
+                <li>Direct Hire Strategy</li>
+                <li>Onsite Recruiting</li>
+                <li>Overview</li>
+                <li>Payroll</li>
+                <li>Banking</li>
+                <li>Financial Services</li>
+                <li>Carm</li>
 
           </ol>
     </div>

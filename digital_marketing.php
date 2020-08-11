@@ -54,13 +54,7 @@
               <li><a href="about.php" >About</a></li>
               <li class="has-children">
                 <a href="job-listings.php">Job Listings</a>
-                <ul>
-                <li><a href="#">Digital strategy</a></li>
-                <li><a href="#">PPC</a></li>
-                <li><a href="#">SEO Agency Services</a></li>
-                <li><a href="#">Social Media Services</a></li>
-
-              </ul>
+                
               </li>
               <li class="has-children">
                 <a href="services.php" class="active">Pages</a>
@@ -119,12 +113,12 @@
                 <li><a href="hr-services.php">IT Services</a></li>
                 <li><a href="digital_marketing.php">HR Services</a></li>
                 <li><span class="active">Digital Marketing</span>
-                  <ul><li>Social Media Marketing</li>
-                  <li>SEO</li>
-                <li>Social Media Optimization</li>
-              <li>Pay Per Click (PPC)</li>
-            <li>Content Marketing</li>
-          <li>Google Analytics</li></ul></li>
+                  <ul><li><a href="#">Social Media Marketing</a></li>
+                      <li><a href="#">SEO</a></li>
+                      <li><a href="#">Social Media Optimization</a></li>
+                      <li><a href="#">Pay Per Click (PPC)</a></li>
+                      <li><a href="#">Content Marketing</a></li>
+                      <li><a href="#">Google Analytics</a></li></ul></li>
 
               </ul>
             </div>

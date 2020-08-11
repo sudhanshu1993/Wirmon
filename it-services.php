@@ -113,6 +113,8 @@
           <div class="col-lg-3 mr-auto">
             <div class="border p-4 rounded">
               <ul class="list-unstyled block__47528 mb-0">
+              <li><a href="digital_marketing.php">Digital Marketing</a></li>
+                <li><a href="hr-services.php">HR Services</a></li>
                 <li><span class="active">IT Services</span>
                 <ul>
                 <li><a href="#">Android Apps</a></li>
