@@ -251,8 +251,104 @@ div a {
       </div>
     </div>
   </section>
+  <section class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <a data-fancybox data-ratio="2" href="#" class="block__96788">
 
+              <img src="images/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow">
+            </a>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h2 class="section-title mb-3">IT Services</h2>
+            <p class="lead">Wirmon offers a variety of IT managed services. Whether you need an expert to manage your employement, IT services and Digital Marketing, need someone to design, maintain, onboard, or train your client or just need additional remote IT support for your in-house IT Department or others, we can help!</p>
+            <p style="color: #999999;">Are you looking to upgrade your business phone systems? Whether you are interested in adding new features or upgrade an existing system, Wirmon is a preferred service provider for top Employment, corporate training, IT and digital marketing services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="site-section pt-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
+            <a data-fancybox data-ratio="2" href="#" class="block__96788">
+
+              <img src="images/sq_img_8.jpg" alt="Image" class="img-fluid img-shadow">
+            </a>
+          </div>
+          <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
+            <h2 class="section-title mb-3">Digital Marketing</h2>
+            <p class="lead">Wirmon espouses the concept of conscious capitalism. Conscious capitalism focuses on the four tenets of higher purpose, conscious leadership, conscious culture, and stakeholder orientation. Wirmon brings these beliefs to life via our purpose.</p>
+            <p class="lead">Our Values</p>
+            <ol style="color: #999999;" >
+                        <li>Exceeding Expectations</li>
+                        <li>Transparancy</li>
+                        <li>Being Passionate about Making a Difference</li>
+                        <li>Keeping employee Happy</li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <a data-fancybox data-ratio="2" href="#" class="block__96788">
+
+              <img src="images/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow">
+            </a>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h2 class="section-title mb-3">Job Portal</h2>
+            <p class="lead">Wirmon offers a variety of IT managed services. Whether you need an expert to manage your employement, IT services and Digital Marketing, need someone to design, maintain, onboard, or train your client or just need additional remote IT support for your in-house IT Department or others, we can help!</p>
+            <p style="color: #999999;">Are you looking to upgrade your business phone systems? Whether you are interested in adding new features or upgrade an existing system, Wirmon is a preferred service provider for top Employment, corporate training, IT and digital marketing services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section pt-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0 order-md-2">
+            <a data-fancybox data-ratio="2" href="#" class="block__96788">
+
+              <img src="images/sq_img_8.jpg" alt="Image" class="img-fluid img-shadow">
+            </a>
+          </div>
+          <div class="col-lg-5 mr-auto order-md-1  mb-5 mb-lg-0">
+            <h2 class="section-title mb-3">Certification & Training</h2>
+            <p class="lead">Wirmon espouses the concept of conscious capitalism. Conscious capitalism focuses on the four tenets of higher purpose, conscious leadership, conscious culture, and stakeholder orientation. Wirmon brings these beliefs to life via our purpose.</p>
+            <p class="lead">Our Values</p>
+            <ol style="color: #999999;" >
+                        <li>Exceeding Expectations</li>
+                        <li>Transparancy</li>
+                        <li>Being Passionate about Making a Difference</li>
+                        <li>Keeping employee Happy</li>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="site-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            <a data-fancybox data-ratio="2" href="#" class="block__96788">
+
+              <img src="images/sq_img_6.jpg" alt="Image" class="img-fluid img-shadow">
+            </a>
+          </div>
+          <div class="col-lg-5 ml-auto">
+            <h2 class="section-title mb-3">HR Services</h2>
+            <p class="lead">Wirmon offers a variety of IT managed services. Whether you need an expert to manage your employement, IT services and Digital Marketing, need someone to design, maintain, onboard, or train your client or just need additional remote IT support for your in-house IT Department or others, we can help!</p>
+            <p style="color: #999999;">Are you looking to upgrade your business phone systems? Whether you are interested in adding new features or upgrade an existing system, Wirmon is a preferred service provider for top Employment, corporate training, IT and digital marketing services.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   <?php include_once 'footer.php'; ?>
 
   </div>
