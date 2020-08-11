@@ -467,15 +467,15 @@
     </section>
 
 
-    <section class="ftco-section services-section bg-light ftco-animate" >
+    <section class="ftco-section services-section bg-light ftco-animate" style="padding: 3em 0;">
       <div class="container">
         <div class="row d-flex">
           <div class="col-md-3 d-flex align-self-stretch">
             <div class="media block-6 services d-block">
-              <div class="icon fadeInUp wow" style="animation-duration:2s;visibility:visible !important;"><span class="flaticon-resume"></span></div>
+              <div class="icon fadeInUp wow" style="animation-duration:2s;visibility:visible !important;"><span class="flaticon-promotions"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;visibility:visible !important;">Job Portal</h3>
-                <p class="fadeInUp wow" style="animation-name: fadeInUp !important;animation-duration:2.5s;visibility:visible !important;">Search Millions of Jobs | Search Expert Candidates</p>
+                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;visibility:visible !important;">HR Services</h3>
+                <p class="fadeInUp wow" style="animation-name: fadeInUp !important;animation-duration:2.5s;visibility:visible !important;">Help your organisation improve hiring!</p>
               </div>
             </div>
           </div>
@@ -488,21 +488,21 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-promotions"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">HR Services</h3>
-                <p class="fadeInUp wow" style="animation-duration:2.5s;">Help your organisation improve hiring!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+        <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
               <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-employee"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">Digital Marketing</h3>
                 <p class="fadeInUp wow" style="animation-duration:2.5s;">Own the Internet!Increase your leads and sales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-resume"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">Training and Certification</h3>
+                <p class="fadeInUp wow" style="animation-duration:2.5s;">Get Certified.Get Ahead.</p>
               </div>
             </div>
           </div>
