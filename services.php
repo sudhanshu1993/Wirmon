@@ -202,7 +202,60 @@ div a {
       </div>
     </div>
   </section>
+  <section>
+    <div class="container const">
 
+    <div class="card">
+    <a href ="certi.php" style="padding : 0 ;font-size:16px;">
+
+      <div class="face face1">
+        <div class="content">
+          <img src="images/its.png">
+          <h3>Certification & Training</h3>
+        </div>
+      </div>
+      </a>
+      <div class="face face2">
+      <div class="content">
+      <ol>
+            <li>Selenium</li>
+            <li>Node.js Training</li>
+            <li>Angular Training</li>
+            <li>Javascript Certification</li>
+            <li>Intro to IOT</li>
+            <li>SQL Training</li>
+
+          </ol>
+        </div>
+      </div>
+
+      </div>
+
+     
+      <div class="card">
+      <a href ="hr-services.php" style="padding : 0;font-size:16px;">
+      <div class="face face1">
+        <div class="content">
+          <img src="images/hrs.png">
+          <h3>Job Portal</h3>
+        </div>
+      </div>
+      </a>
+      <div class="face face2">
+      <div class="content">
+      <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+          </ol>
+    </div>
+      </div>
+
+      </div>
+    </div>
+  </section>
 
 
   <?php include_once 'footer.php'; ?>

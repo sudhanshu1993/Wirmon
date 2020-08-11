@@ -99,6 +99,7 @@
             <h1 class="text-white font-weight-bold">HR Service</h1>
             <div class="custom-breadcrumbs">
             <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
+            <a href="services.php">Services</a> <span class="mx-2 slash">/</span>
               <span class="text-white"><strong>HR Service</strong></span>
             </div>
           </div>
@@ -114,11 +115,16 @@
               <ul class="list-unstyled block__47528 mb-0">
                 <li><a href="hr-services.php">IT Services</a></li>
                 <li><span class="active">HR Services</span>
-                <ul><li>Staffing Services</li>
-                <li>Onboarding</li>
-              <li>Talent Acquisition</li>
-            <li>Training & Development</li></ul></li>
-                <li><a href="digital_marketing.php">Digital Marketing</a></li>
+                <ul>
+                <li><a href="#">Direct Hire Strategy</a></li>
+                <li><a href="#">Onsite Recruiting</a></li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">Payroll</a></li>
+                <li><a href="#">Banking</a></li>
+                <li><a href="#">Financial Services</a></li>
+                <li><a href="#">Carm</a></li>
+
+              </ul>
 
               </ul>
             </div>

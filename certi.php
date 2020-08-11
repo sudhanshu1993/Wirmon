@@ -54,13 +54,10 @@
               <li><a href="about.php" >About</a></li>
               <li class="has-children">
                 <a href="job-listings.php">Job Listings</a>
-                <ul>
-                <li><a href="#">Digital strategy</a></li>
-                <li><a href="#">PPC</a></li>
-                <li><a href="#">SEO Agency Services</a></li>
-                <li><a href="#">Social Media Services</a></li>
-
-              </ul>
+                <ul class="dropdown">
+                  <li><a href="job-single.php">Job Single</a></li>
+                  <li><a href="post-job.php">Post a Job</a></li>
+                </ul>
               </li>
               <li class="has-children">
                 <a href="services.php" class="active">Pages</a>
@@ -99,11 +96,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <h1 class="text-white font-weight-bold">Digital Marketing</h1>
+            <h1 class="text-white font-weight-bold">Certifications and Training</h1>
             <div class="custom-breadcrumbs">
             <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
             <a href="services.php">Services</a> <span class="mx-2 slash">/</span>
-              <span class="text-white"><strong>Digital Marketing</strong></span>
+              <span class="text-white"><strong>Certifications and Training</strong></span>
             </div>
           </div>
         </div>
@@ -116,40 +113,40 @@
           <div class="col-lg-3 mr-auto">
             <div class="border p-4 rounded">
               <ul class="list-unstyled block__47528 mb-0">
-                <li><a href="hr-services.php">IT Services</a></li>
-                <li><a href="digital_marketing.php">HR Services</a></li>
-                <li><span class="active">Digital Marketing</span>
-                  <ul><li>Social Media Marketing</li>
-                  <li>SEO</li>
-                <li>Social Media Optimization</li>
-              <li>Pay Per Click (PPC)</li>
-            <li>Content Marketing</li>
-          <li>Google Analytics</li></ul></li>
+                <li><span class="active">Certification & Training</span>
+                <ul>
+                <li><a href="#">Selenium</a></li>
+                <li><a href="#">Node.js Training</a></li>
+                <li><a href="#">Angular Training</a></li>
+                <li><a href="#">Javascript Certification</a></li>
+                <li><a href="#">Intro to IOT</a></li>
+                <li><a href="#">SQL Training</a></li>
+                <li><a href="#">React .JS</a></li>
+                <li><a href="#">Big Data and Analytics</a></li>
+                
+
+              </ul>
 
               </ul>
             </div>
           </div>
           <div class="col-lg-8">
-            <span class="text-primary d-block mb-5"><span class="icon-paper-plane display-1"></span></span>
-            <h2 class="mb-4">Digital Marketing</h2>
-        <p>Wirmon's digital marketing team will help you develop an online marketing strategy to drive more qualified visitors to your site and convert those visitors into leads and sales.</p>
-          <p><h4>Search Engine Optimization (SEO)</h4>SEO acts as a jetpack for your content marketing efforts.
- SEO consists of on-page and off-page activities to boost your website’s visibility in search engine result pages (SERPs) for your preferred keywords.
-SEO was primarily text-based, but in recent year’s voice search has gained prominence as well, which is why your SEO activities need to have a conversational approach.
-</p>
-<p><h4>Social Media Marketing</h4>Social media marketing ensure you are present on the platforms your users are spending the most time on.
-Social media has also played a vital role in propagating video marketing and the ephemeral content wave.
-It enables two-way communication and your fans and followers can interact with you on your content through likes, comments, direct messages, or by posting on your official pages.
-</p>
-<p><h4>Content Marketing</h4>Content creation is the spine of your entire digital marketing strategy.
-Whether you’ve got a documented content marketing strategy or not, you’re creating content to inform, entertain, inspire, or persuade your buyers through other channels.
-</p>
+            <span class="text-primary d-block mb-5"><span class="icon-search display-1"></span></span>
+            <h2 class="mb-4">Certifications and Training</h2>
+          <P>Human resources are the set of the people who make up the workforce of an organization, business sector, industry, or economy.
+          Human resources play an important part of developing and making a company or organization at the beginning or making a success at the end, due to the labour provided by employees.
+        wIRMON is 'One Stop Shop' for all your HR solutions under one roof!</P>
+        <p><h4>Staffing Services</h4>Hiring the right candidate is one of the biggest challenge of a staffing agency. If you are looking to recruit skilled employees for your organization, contact Wirmon HR today. We can help you with contractual as well as permanent staffing services.
+        Wirmon’s expertise in providing staffing solutions enables you to focus your energies on your core business activities and spend less time on filling the contractual roles and administering the HR processes for the contract employees.</p>
+       <p><h4>Onboarding</h4>We help new hires manage forms and tasks efficiently and make onboarding an experience to cherish for the new hire. </p>
+       <p><h4>Training & Development</h4>Help new hires manage forms and tasks efficiently and make onboarding an experience to cherish for the new hire. While individual managers may provide direct training when an employee is on the job, it’s the HR department that is responsible for educating new hires about company policies and procedures.</p>
             <p><a href="#" class="btn btn-primary btn-md mt-4">Hire Us Now</a></p>
           </div>
         </div>
       </div>
     </section>
-  <?php include_once 'footer.php'; ?>
+
+    <?php include_once 'footer.php'; ?>
 
   </div>
 

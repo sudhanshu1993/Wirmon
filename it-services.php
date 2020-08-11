@@ -99,6 +99,7 @@
             <h1 class="text-white font-weight-bold">IT Service</h1>
             <div class="custom-breadcrumbs">
             <a href="index.php">Home</a> <span class="mx-2 slash">/</span>
+            <a href="services.php">Services</a> <span class="mx-2 slash">/</span>
               <span class="text-white"><strong>IT Service</strong></span>
             </div>
           </div>
@@ -113,11 +114,14 @@
             <div class="border p-4 rounded">
               <ul class="list-unstyled block__47528 mb-0">
                 <li><span class="active">IT Services</span>
-                <ul><li>Web Development</li>
-                <li>Mobile App Development</li></ul>
-                </li>
-                <li><a href="hr-services.php">HR Services</a></li>
-                <li><a href="digital_marketing.php">Digital Marketing</a></li>
+                <ul>
+                <li><a href="#">Android Apps</a></li>
+                <li><a href="#">Wordpress Dev</a></li>
+                <li><a href="#">Drupal Dev</a></li>
+                <li><a href="#">E-commerce</a></li>
+                <li><a href="#">Saas Development</a></li>
+                <li><a href="#">Quality Assurance</a></li>
+                <li><a href="#">Bespoke Web Apps</a></li>
 
               </ul>
             </div>
