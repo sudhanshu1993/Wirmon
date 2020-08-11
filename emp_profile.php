@@ -35,6 +35,34 @@ if(isset($_POST['submit'])) {
     $stmt1->execute();
     echo '<script>alert("success")</script>';
 }
+if(isset($_POST['submit']))
+  {
+    $filename1 = $_FILES['aadhar']['name'];
+      $tempname1 = $_FILES['aadhar']['tmp_name'];
+
+      $target_dir1 = "Emp_documents/".$filename1;
+
+      $filename2 = $_FILES['PAN']['name'];
+      $tempname2 = $_FILES['PAN']['tmp_name'];
+
+      $target_dir2 = "Emp_documents/".$filename2;
+
+      $filename3 = $_FILES['logo']['name'];
+      $tempname3 = $_FILES['logo']['tmp_name'];
+
+      $target_dir3 = "Emp_documents/".$filename3;
+
+      if(move_uploaded_file($tempname1,$target_dir1)&&move_uploaded_file($tempname2,$target_dir2)&&move_uploaded_file($tempname3,$target_dir3))
+      {
+        echo "alert('Your documents successfully received and you waiting for updation')";
+        header('Location:index.php');
+      }
+      else{
+        header('Location: emp_profile.php');
+      }
+
+  }
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -231,21 +259,23 @@ if(isset($_POST['submit'])) {
             </div>
             <div class="form-group">
                 <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload  Company registration/ Individual aadhar<input type="file" name="regis_aadhar" value="<?php echo $regis_aadhar;?>" hidden>
+              Upload  Company registration/ Individual aadhar<input type="file" name="aadhar" accept=".pdf,.docx" value="<?php echo $regis_aadhar;?>" hidden>
               </label>
             </div>
             <div class="form-group">
             <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload PAN/ GST<input type="file" name="pan_gst" value="<?php echo $pan_gst;?>" hidden>
+              Upload PAN/ GST<input type="file" name="PAN" accept=".pdf,.docx" value="<?php echo $pan_gst;?>" hidden>
               </label>
             </div>
             <div class="form-group">
               <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload Logo/ Individual photo<input type="file" name="logo_photo" value="<?php echo $logo_photo;?>" hidden>
+              Upload Logo/ Individual photo<input type="file" name="logo" accept=".pdf,.docx" value="<?php echo $logo_photo;?>" hidden>
               </label>
             </div><hr>
               <div class="form-group">
-<center><input type="submit" name="submit" class="btn btn-primary btn-md text-white" value="Update" style="border: 1px solid #157efb;background-color:#157efb;font-size: 20px;">
+                <center>
+                  <input type="submit" name="submit" class="btn btn-primary btn-md text-white" value="Update" style="border: 1px solid #157efb;background-color:#157efb;font-size: 20px;">
+               </center>
 </div>
           </form>
         </div>
