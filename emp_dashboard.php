@@ -59,26 +59,15 @@
               <li><a href="index.php" class="nav-link">Home</a></li>
               <li><a href="about.php">About</a></li>
               <li class="has-children">
-                <a href="job-listings.php">Jobs</a>
-                <ul class="dropdown">
-                  <li><a href="job-single.php">Job Single</a></li>
-                  <li><a href="post-job.php">Post a Job</a></li>
-                </ul>
-              </li>
-              <li class="has-children">
-                <a href="services.php">Services</a>
-                <ul class="dropdown">
-                  <li><a href="services.php">Services</a></li>
-                  <li><a href="service-single.php">Service Single</a></li>
-                  <li><a href="blog-single.php">Blog Single</a></li>
-                  <li><a href="portfolio.php">Portfolio</a></li>
-                  <li><a href="portfolio-single.php">Portfolio Single</a></li>
-                  <li><a href="testimonials.php">Testimonials</a></li>
-                  <li><a href="faq.php">Frequently Ask Questions</a></li>
-                  <li><a href="gallery.php">Gallery</a></li>
-                </ul>
-              </li>
-              <li><a href="blog.php">Blog</a></li>
+                <li><a href="job-listings.php">Jobs</a> </li>
+                <li class="has-children">
+                  <a>Services</a>
+                  <ul class="dropdown">
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <li><a href="faq.php">Frequently Ask Questions</a></li>
+                  </ul>
+                </li>
               <li><a href="contact.php">Contact</a></li>
               <li class="d-lg-none"><a href="post-job.php"><span class="mr-2">+</span> Post a Job</a></li>
               <li class="d-lg-none"><?php echo $_SESSION['email']; ?></li>
@@ -145,7 +134,7 @@
             </nav>
         </div>
     </div>
-             
+
 
 <div class="col-md-6">
 <div class="panel-heading" style="background:#78d5ef">
