@@ -200,9 +200,9 @@
 
               <div class="form-group">
                 <label for="job-description">Company Description (Optional)</label>
-                <div class="editor" id="editor-2">
-                  <p id="edit">Description</p>
-                </div>
+                <textarea class="editor" id="editor-2">
+              
+                </textarea>
               </div>
 
               <div class="form-group">
