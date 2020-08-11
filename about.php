@@ -23,6 +23,8 @@
   padding-right:2%;
   border: 0px !important;
   }
+  .collapse{visibility: visible !important;}
+
 </style>
 
     <!-- MAIN CSS -->
@@ -74,26 +76,15 @@
               <li><a href="index.php" class="nav-link">Home</a></li>
               <li><a href="about.php" class="active">About</a></li>
               <li class="has-children">
-                <a>Jobs</a>
-                <ul class="dropdown">
-                  <li><a href="job-listings.php">Job Single</a></li>
-                  <li><a href="post-job.php">Post a Job</a></li>
-                </ul>
-              </li>
-              <li class="has-children">
-                <a>Services</a>
-                <ul class="dropdown">
-                  <li><a href="services.php">Services</a></li>
-                  <li><a href="service-single.php">Service Single</a></li>
-                  <li><a href="blog-single.php">Blog Single</a></li>
-                  <li><a href="portfolio.php">Portfolio</a></li>
-                  <li><a href="portfolio-single.php">Portfolio Single</a></li>
-                  <li><a href="testimonials.php">Testimonials</a></li>
-                  <li><a href="faq.php">Frequently Ask Questions</a></li>
-                  <li><a href="gallery.php">Gallery</a></li>
-                </ul>
-              </li>
-              <li><a href="blog.php">Blog</a></li>
+                <li><a href="job-listings.php">Jobs</a> </li>
+                <li class="has-children">
+                  <a>Services</a>
+                  <ul class="dropdown">
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <li><a href="faq.php">Frequently Ask Questions</a></li>
+                  </ul>
+                </li>
               <li><a href="contact.php">Contact</a></li>
               <li class="d-lg-none"><a href="post-job.php"><span class="mr-2">+</span> Post a Job</a></li>
               <li class="d-lg-none"><a href="login.php">Log In</a></li>

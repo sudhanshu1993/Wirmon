@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="css/flaticon.css">
 <style>
 .pb-3{animation-name: fadeInUp;animation-duration: 2s;}
+.collapse{visibility: visible !important;}
 </style>
     <!-- MAIN CSS -->
     <script src="js/main.js"></script>
@@ -75,27 +76,15 @@
                 <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
                   <li><a href="index.php" class="active">Home</a></li>
                   <li><a href="about.php">About</a></li>
-                  <li class="has-children">
-                    <a>Jobs</a>
-                    <ul class="dropdown">
-                      <li><a href="job-listings.php">Job Listings</a></li>
-                      <li><a href="post-job.php">Post a Job</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="job-listings.php">Jobs</a> </li>
                   <li class="has-children">
                     <a>Services</a>
                     <ul class="dropdown">
                       <li><a href="services.php">Services</a></li>
-                      <li><a href="service-single.php">Service Single</a></li>
-                      <li><a href="blog-single.php">Blog Single</a></li>
                       <li><a href="portfolio.php">Portfolio</a></li>
-                      <li><a href="portfolio-single.php">Portfolio Single</a></li>
-                      <li><a href="testimonials.php">Testimonials</a></li>
                       <li><a href="faq.php">Frequently Ask Questions</a></li>
-                      <li><a href="gallery.php">Gallery</a></li>
                     </ul>
                   </li>
-                  <li><a href="blog.php">Blog</a></li>
                   <li><a href="contact.php">Contact</a></li>
                   <li class="d-lg-none"><a href="post-job.php"><span class="mr-2">+</span> Post a Job</a></li>
                   <li class="d-lg-none"><a href="login.php">Log In</a></li>
@@ -478,15 +467,15 @@
     </section>
 
 
-    <section class="ftco-section services-section bg-light ftco-animate" >
+    <section class="ftco-section services-section bg-light ftco-animate" style="padding: 3em 0;">
       <div class="container">
         <div class="row d-flex">
           <div class="col-md-3 d-flex align-self-stretch">
             <div class="media block-6 services d-block">
-              <div class="icon fadeInUp wow" style="animation-duration:2s;visibility:visible !important;"><span class="flaticon-resume"></span></div>
+              <div class="icon fadeInUp wow" style="animation-duration:2s;visibility:visible !important;"><span class="flaticon-promotions"></span></div>
               <div class="media-body">
-                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;visibility:visible !important;">Job Portal</h3>
-                <p class="fadeInUp wow" style="animation-name: fadeInUp !important;animation-duration:2.5s;visibility:visible !important;">Search Millions of Jobs | Search Expert Candidates</p>
+                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;visibility:visible !important;">HR Services</h3>
+                <p class="fadeInUp wow" style="animation-name: fadeInUp !important;animation-duration:2.5s;visibility:visible !important;">Help your organisation improve hiring!</p>
               </div>
             </div>
           </div>
@@ -499,21 +488,21 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-            <div class="media block-6 services d-block">
-              <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-promotions"></span></div>
-              <div class="media-body">
-                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">HR Services</h3>
-                <p class="fadeInUp wow" style="animation-duration:2.5s;">Help your organisation improve hiring!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+        <div class="col-md-3 d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services d-block">
               <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-employee"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">Digital Marketing</h3>
                 <p class="fadeInUp wow" style="animation-duration:2.5s;">Own the Internet!Increase your leads and sales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 services d-block">
+              <div class="icon fadeInUp wow" style="animation-duration:2s;"><span class="flaticon-resume"></span></div>
+              <div class="media-body">
+                <h3 class="heading mb-3 fadeInUp wow" style="animation-duration:2s;">Training and Certification</h3>
+                <p class="fadeInUp wow" style="animation-duration:2.5s;">Get Certified.Get Ahead.</p>
               </div>
             </div>
           </div>

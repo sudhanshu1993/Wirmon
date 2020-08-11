@@ -25,13 +25,15 @@ if($qry->rowCount() > 0)
       $logo_photo=$row['logo/photo'];
     }
   }
-  if(isset($_POST['submit'])) {
+if(isset($_POST['submit'])) {
 
-$discussionContent = $_POST['discussionContent'];
-  $stmt1 = $conn->prepare("update employer set comp_desc='$discussionContent' where email=?");
-  $stmt1->bindParam(1, $email);
+  $discussionContent = $_POST['discussionContent'];
+  echo $discussionContent;
+  echo $email;
+    $stmt1 = $conn->prepare("update employer set comp_desc='$discussionContent' where email=?");
+    $stmt1->bindParam(1, $email);
     $stmt1->execute();
-  echo '<script>alert("success")</script>';
+    echo '<script>alert("success")</script>';
 }
 ?>
 <!doctype html>
@@ -89,27 +91,15 @@ $discussionContent = $_POST['discussionContent'];
             <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
               <li><a href="index.php" class="nav-link">Home</a></li>
               <li><a href="about.php">About</a></li>
+              <li><a href="job-listings.php">Jobs</a> </li>
               <li class="has-children">
-                <a href="job-listings.php">Jobs</a>
-                <ul class="dropdown">
-                  <li><a href="job-single.php">Job Single</a></li>
-                  <li><a href="post-job.php">Post a Job</a></li>
-                </ul>
-              </li>
-              <li class="has-children">
-                <a href="services.php">Services</a>
+                <a>Services</a>
                 <ul class="dropdown">
                   <li><a href="services.php">Services</a></li>
-                  <li><a href="service-single.php">Service Single</a></li>
-                  <li><a href="blog-single.php">Blog Single</a></li>
                   <li><a href="portfolio.php">Portfolio</a></li>
-                  <li><a href="portfolio-single.php">Portfolio Single</a></li>
-                  <li><a href="testimonials.php">Testimonials</a></li>
                   <li><a href="faq.php">Frequently Ask Questions</a></li>
-                  <li><a href="gallery.php">Gallery</a></li>
                 </ul>
               </li>
-              <li><a href="blog.php">Blog</a></li>
               <li><a href="contact.php">Contact</a></li>
               <li class="d-lg-none"><a href="post-job.php"><span class="mr-2">+</span> Post a Job</a></li>
               <li class="d-lg-none"><?php echo $_SESSION['email']; ?></li>
@@ -188,7 +178,7 @@ $discussionContent = $_POST['discussionContent'];
       </div>
       <div class="row mb-4" style="margin-left:unset;margin-right:unset;">
         <div class="col-lg-12">
-          <form class="p-4 p-md-5 border rounded" method="post" role="form" action="#">
+          <form class="p-4 p-md-5 border rounded" method="post" role="form" action="<?=($_SERVER['PHP_SELF'])?>">
             <h3 class="text-black mb-5 border-bottom pb-2">User Details</h3>
 
             <div class="form-group">
@@ -229,7 +219,7 @@ $discussionContent = $_POST['discussionContent'];
           </div>
             <div class="form-group">
               <label for="job-description">Company Description</label>
-               <input name="discussionContent" type="hidden" value="<?php echo $comp_desc;?>">
+               <input name="discussionContent" id="text" type="hidden" value="<?php echo $comp_desc;?>">
               <div id="editor-2" style="height: 375px;">
 <?php echo $comp_desc;?>
               </div>
@@ -237,21 +227,21 @@ $discussionContent = $_POST['discussionContent'];
 
             <div class="form-group">
               <label for="company-website">Website URL</label>
-              <input type="text" value="<?php echo $url;?>" class="form-control" id="company-website" placeholder="https://">
+              <input type="text" name="website_url" value="<?php echo $url;?>" class="form-control" id="company-website" placeholder="https://">
             </div>
             <div class="form-group">
                 <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload  Company registration/ Individual aadhar<input type="file" value="<?php echo $regis_aadhar;?>" hidden>
+              Upload  Company registration/ Individual aadhar<input type="file" name="regis_aadhar" value="<?php echo $regis_aadhar;?>" hidden>
               </label>
             </div>
             <div class="form-group">
             <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload PAN/ GST<input type="file" value="<?php echo $pan_gst;?>" hidden>
+              Upload PAN/ GST<input type="file" name="pan_gst" value="<?php echo $pan_gst;?>" hidden>
               </label>
             </div>
             <div class="form-group">
               <label class="btn btn-primary btn-md btn-file" style="width: -webkit-fill-available;height: 40px;">
-              Upload Logo/ Individual photo<input type="file" value="<?php echo $logo_photo;?>" hidden>
+              Upload Logo/ Individual photo<input type="file" name="logo_photo" value="<?php echo $logo_photo;?>" hidden>
               </label>
             </div><hr>
               <div class="form-group">
@@ -287,9 +277,8 @@ $discussionContent = $_POST['discussionContent'];
     <script src="js/bootstrap-select.min.js"></script>
 
     <script src="js/custom.js"></script>
- <script src="discussionsEditor.js"></script>
-    <script>
 
+    <script>
     var quill = new Quill('#editor-2', {
                    modules: {
                    toolbar: [
@@ -307,14 +296,16 @@ $discussionContent = $_POST['discussionContent'];
                    var form = document.querySelector('form');
                    form.onsubmit = function() {
                      // Populate hidden form on submit
-                       var discussionContent = document.querySelector('input[name=discussionContent]');
-                       discussionContent.value = JSON.stringify(quill.getContents());
-
-                       var url ="#";
-                       var data = stringify(quill.getContents());
+                //   var discussionContent = document.querySelector('input[name=discussionContent]');
+                      var discussionContent = document.querySelector(".ql-editor").innerHTML;
+                      // discussionContent.value = JSON.stringify(quill.getContents());
+                      discussionContent.value = document.querySelector(".ql-editor").innerHTML;
+                      document.getElementById("text").value = document.querySelector(".ql-editor").innerHTML;
+                       var url = "<?=($_SERVER['PHP_SELF'])?>";
+                       var data = document.querySelector(".ql-editor").innerHTML;
                        alert( "the data is " + data);
                            $.ajax({
-                           type: "POST",
+                           type : "POST",
                            url : url,
                            data : discussionContent,
 
