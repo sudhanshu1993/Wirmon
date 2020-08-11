@@ -20,6 +20,7 @@
       <link rel="stylesheet" href="css/flaticon.css">
 <style>
 .pb-3{animation-name: fadeInUp;animation-duration: 2s;}
+.collapse{visibility: visible !important;}
 </style>
     <!-- MAIN CSS -->
     <script src="js/main.js"></script>

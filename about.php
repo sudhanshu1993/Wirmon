@@ -23,6 +23,8 @@
   padding-right:2%;
   border: 0px !important;
   }
+  .collapse{visibility: visible !important;}
+  
 </style>
 
     <!-- MAIN CSS -->
