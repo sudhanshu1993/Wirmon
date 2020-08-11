@@ -212,38 +212,58 @@
           </div>
         </div>
         <div>
-      <div class="card" style="display:inline-block;">
-    <img class="card-img-top" src="images/Anil.jpeg" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title"><b>Anil Chaurasia</b></h4>
-      <p class="card-text card-subtitle">Founder and CEO</p>
-      <a href="https://www.linkedin.com/in/cryspona/" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
-    </div>
-  </div>
-  <div class="card" style="display:inline-block;">
-    <img class="card-img-top" src="images/Reenu.jpeg" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title"><b>Reenu Chaurasiya</b></h4>
-      <p class="card-text card-subtitle">VP Human Resource</p>
-      <a href="https://www.linkedin.com/in/reenu-chaurasiya-0845921ab/" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
-    </div>
-  </div>
-  <div class="card" style="display:inline-block;">
-    <img class="card-img-top" src="images/Soundarya.jpg" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title"><b>Soundarya Karli</b></h4>
-      <p class="card-text  card-subtitle">IT Manager</p>
-      <a href="https://www.linkedin.com/in/soundarya-karli" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
-    </div>
-  </div>
-  <div class="card" style="display:inline-block;">
-    <img class="card-img-top" src="images/Sneha.jpg" alt="Card image" style="width:100%">
-    <div class="card-body">
-      <h4 class="card-title"><b>Sneha Gobinathan</b></h4>
-      <p class="card-text card-subtitle" >Marketing Manager</p>
-      <a href="https://in.linkedin.com/in/sneha-gobinathan-267b391a9?trk=people-guest_people_search-card" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
-    </div>
-  </div>
+        <div class="col col-sm-first col-md">
+                <div class="media">
+                    <img src="images/Anil.jpeg" class="d-flex mr-3 img-thumbnail align-self-center" alt="alberto" width="200px">
+                    <div class="media-body">
+                        <h2>Anil Chaurasia</h2>
+                <h4>Founder and CEO</h4>
+                <p>Anil Chaurasia is an entrepreneur and founder and CEO of Wirmon, which makes small business sales and marketing automation Employement, It services, Digitally promotions and research and development. Anil Chaurasia has worked for multiple segment whose primary responsibilities include making major corporate decisions, managing the overall operations and resources of a company, acting as the main point of communication between the board of directors and corporate . </p>
+                <a href="https://www.linkedin.com/in/cryspona/" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col col-sm-first col-md">
+                <div class="media">
+                    <img src="images/Reenu.jpeg" class="d-flex mr-3 img-thumbnail align-self-center" alt="alberto" width="200px">
+                    <div class="media-body">
+                        <h2>Reenu Chaurasiya</h2>
+                <h4>VP Human Resource</h4>
+                <p>Reenu Chaurasiya was raised in Satna before re-locating to Indore in 2016. She graduated Satna, Madhya Pradesh in Human Resources Management (HRM), followed by her MBA. Reenu Chaurasiya has over two years of leadership and two years of HRM experience, with a strong passion for developing employee relations, improving HR systems and processes, and increasing efficiencies for operational excellence.</p>
+                <a href="https://www.linkedin.com/in/reenu-chaurasiya-0845921ab/" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col col-sm-first col-md">
+                <div class="media">
+                    <img src="images/Soundarya.jpg" class="d-flex mr-3 img-thumbnail align-self-center" alt="alberto" width="200px">
+                    <div class="media-body">
+                        <h2>Soundarya Karli</h2>
+                <h4>IT Manager</h4>
+                <p>Soundarya Karli is an Indian software engineer, and the IT Head of Wirmon, the wanted startup in India. She joined the organization in July 2018.</p>
+                <a href="https://www.linkedin.com/in/soundarya-karli" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col col-sm-first col-md">
+                <div class="media">
+                    <img src="images/Sneha.jpg" class="d-flex mr-3 img-thumbnail align-self-center" alt="alberto" width="200px">
+                    <div class="media-body">
+                        <h2>Sneha Gobinathan</h2>
+                <h4>Marketing Manager</h4>
+                <p>Sneha Gobinathan is in charge of planning and managing marketing campaigns that promote a company's brand, products, and services. Her duties include planning campaigns, analyzing metrics, and identifying trends. She typically have experience in art direction and social media. </p>
+                <a href="https://in.linkedin.com/in/sneha-gobinathan-267b391a9?trk=people-guest_people_search-card" style="width: 100%;margin: auto;" target="_blank" class="btn btn-primary">See Profile</a>
+                    </div>
+                </div>
+                
+            </div>
+      
+ 
+ 
+
                       </div>
       </div>
     </section>
